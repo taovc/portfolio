@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 import { CgGames } from "react-icons/cg";
 import { GiAirplane } from "react-icons/gi";
 import { MdCardTravel } from "react-icons/md";
@@ -35,11 +34,11 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "If A is a success in life, then A = x + y + z.<br></br> Work is x, y is
-            play, and z is keeping your mouth shut."{" "}
+          <p style={{ color: "#a588c0" }}>
+            "If A is a success in life, then A = x + y + z.<br></br> Work is x,
+            y is play, and z is keeping your mouth shut."{" "}
           </p>
-          <footer className="blockquote-footer">Albert Einstein</footer>
+          <footer className="purple_text">--Albert Einstein</footer>
         </blockquote>
       </Card.Body>
     </Card>
