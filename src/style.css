@@ -330,6 +330,11 @@ button:focus {
   text-align: center;
 }
 
+.icons {
+  color: #5b6af5 !important;
+  font-size: 1.5em !important;
+}
+
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;

@@ -4,10 +4,11 @@ import myImg from "../../Assets/me.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaDocker, FaPython } from "react-icons/fa";
+import { SiCplusplus } from "react-icons/si";
+import { DiJavascript } from "react-icons/di";
 
 function Home2() {
   return (
@@ -19,22 +20,28 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Programming is an art, at least in my eyes, like writing
+              poetry.... 📜
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple">
+                  {" "}
+                  <SiCplusplus className="icons"></SiCplusplus> C/C++{" "}
+                  <DiJavascript className="icons"></DiJavascript>Javascript{" "}
+                  <FaDocker className="icons"></FaDocker>
+                  Docker and <FaPython className="icons"></FaPython>Python.{" "}
+                </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of Interest's are &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
+                  software development, web development, algorithms{" "}
+                </b>{" "}
+                and also in areas related to{" "}
+                <b className="purple">artificial intelligence.</b>
               </i>
               <br />
               <br />
@@ -48,7 +55,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js, Vue.js and Angular</b>
               </i>
             </p>
           </Col>
@@ -60,14 +67,15 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>FIND ME BY</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <a href="mailto:vincentao2002@gmail.com" style={{ color: "#18a4cf" }}>contact </a>
+              with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/taovc"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,17 +85,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/tao-weijie-880bab1b8/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +95,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/tz_vc/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
