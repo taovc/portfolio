@@ -9,7 +9,6 @@ import {
   DiPython,
   DiGit,
 } from "react-icons/di";
-import { SiPytorch } from "react-icons/si";
 import { FaDocker, FaAngular } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 
