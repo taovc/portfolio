@@ -11,13 +11,16 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="bluesky">Tao Weijie </span>
-            from <span className="bluesky"> France, Paris.</span>
+            from France, Paris.
             <br />
             Currently pursuing a{" "}
             <span className="bluesky">computer engineer degree </span>at Epitech
             Paris, and I'm planning to study{" "}
             <span className="bluesky">Computational Intelligence MSC</span> at
             Kent University.
+            <br />
+            <br />
+            <span>I am trilingual, English, French and Chinese, I am very passionate about traveling🧳</span>
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
