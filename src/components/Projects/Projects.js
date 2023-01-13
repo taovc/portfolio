@@ -12,15 +12,25 @@ import finance from "../../Assets/Projects/finance.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple_text">Projects </strong>
+          Projects and<strong className="purple_text"> Experiences </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row className="justify-content-md-center">
+          <Col md={8}>
+            <ProjectCard
+              isBlog={false}
+              title="OWL"
+              description="OWL makes it possible to monitor the condition of a driver using a connected watch and his telephone. If the watch and the telephone detect a state of drowsiness, or that the user is at risk of dozing off, it will notify him and advise him to stop in order to prevent any risk of accident."
+              demoLink="mailto:vincentao2002@gmail.com"
+            />
+          </Col>{" "}
+        </Row>
+
+        <Row>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={owl}
