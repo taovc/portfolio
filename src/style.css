@@ -11,15 +11,16 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #2b62d8;
+  --imp-text-color: #4679e6;
 }
 
 .purple {
+  font-weight: bold;
   color: var(--imp-text-color) !important;
 }
 
 .bluesky {
-  color: #00b7ff !important;
+  color: #619ff0 !important;
 }
 
 button:focus {

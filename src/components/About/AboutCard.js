@@ -10,13 +10,13 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="bluesky">Tao Weijie </span>
+            Hi Everyone, I am <span className="purple">Tao Weijie </span>
             from France, Paris.
             <br />
             Currently pursuing a{" "}
-            <span className="bluesky">computer engineer degree </span>at Epitech
+            <span className="purple">computer engineer degree </span>at Epitech
             Paris, and I'm planning to study{" "}
-            <span className="bluesky">Computational Intelligence MSC</span> at
+            <span className="purple">Computational Intelligence MSC</span> at
             Kent University.
             <br />
             <br />
