@@ -6,12 +6,14 @@ import zappy from "../../Assets/Projects/zappy.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import area from "../../Assets/Projects/area.png";
 import owl from "../../Assets/Projects/owl.png";
+import dataraise from "../../Assets/Projects/dataraise.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import finance from "../../Assets/Projects/finance.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
+      <Particle />
       <Container>
         <h1 className="project-heading">
           Projects and<strong className="purple_text"> Experiences </strong>
@@ -23,7 +25,8 @@ function Projects() {
           <Col md={8}>
             <ProjectCard
               isBlog={false}
-              title="OWL"
+              imgPath={dataraise}
+              title="Stage DevOps"
               description="OWL makes it possible to monitor the condition of a driver using a connected watch and his telephone. If the watch and the telephone detect a state of drowsiness, or that the user is at risk of dozing off, it will notify him and advise him to stop in order to prevent any risk of accident."
               demoLink="mailto:vincentao2002@gmail.com"
             />
