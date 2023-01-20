@@ -47,7 +47,7 @@ function Projects() {
               It features a user-friendly dashboard,
               a comprehensive list of orders, bank statement integration, various services, reimbursement forms,
               the ability to create new orders, a linked bank account, a complaint management system, and the option to export
-              data in Excel format. To access the platform, authentication is required.
+              data in Excel format.
               To be able to use the platform, you must be authenticated."
               demoLink="https://nuvoleviaggi.netlify.app/"
               isMail={true}
