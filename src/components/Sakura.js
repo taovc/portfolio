@@ -12,7 +12,6 @@ function Sakura(x, y, s, r, fn) {
 
 Sakura.prototype.draw = function(cxt) {
   cxt.save();
-  var xc = 40 * this.s / 4;
   cxt.translate(this.x, this.y);
   cxt.rotate(this.r);
   cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)
@@ -108,7 +107,7 @@ function getRandom(option) {
 
 function startSakura() {
 
-  requestAnimationFrame = window.requestAnimationFrame ||
+  var requestAnimationFrame = window.requestAnimationFrame ||
     window.mozRequestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
     window.msRequestAnimationFrame ||
@@ -158,13 +157,3 @@ img.onload = function() {
   startSakura();
 }
 
-function stopp() {
-  if(staticx) {
-    var child = document.getElementById("canvas_sakura");
-    child.parentNode.removeChild(child);
-    window.cancelAnimationFrame(stop);
-    staticx = false;
-  } else {
-    startSakura();
-  }
-}
