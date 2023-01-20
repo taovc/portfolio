@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import zappy from "../../Assets/Projects/zappy.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import rtype from "../../Assets/Projects/rtype.jpg";
 import area from "../../Assets/Projects/area.png";
 import owl from "../../Assets/Projects/owl.png";
 import dataraise from "../../Assets/Projects/dataraise.png";
@@ -90,17 +90,19 @@ function Projects() {
               you can choice an action and a reaction and create a workflow. For example, you can create a workflow that send you a mail when you receive a mail.
               "
               ghLink="https://github.com/taovc/area"
-              isMail={true}
             />
           </Col>
 
           <Col md={3} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={rtype}
               isBlog={false}
               title="R-Type"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              description="
+              rewrite the R-Type game in C++ with the SFML library, network programming and multithreading.
+              Our game has a graphical interface, a network protocol, a client and a server.
+              the game architecture is the ECS (Entity Component System) architecture.
+              "
             />
           </Col>
 
@@ -112,8 +114,6 @@ function Projects() {
               description="The goal of this project is to create a network game. Several teams confront on a tiles map containing resources. The winning team is the one with 6 players who reached maximum elevation.
               We will have a web server, ai client and a graphics processor, the server will accept the client's instructions and send information to the graphics processing application.
               "
-              ghLink="https://github.com/taovc"
-              demoLink="https://github.com/taovc"
             />
           </Col>
         </Row>
