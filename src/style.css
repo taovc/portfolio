@@ -472,7 +472,7 @@ button:focus {
 
 .project-card-text {
   position: relative !important;
-  text-align: center !important;
+  text-align: left !important;
   vertical-align: bottom !important;
 }
 
