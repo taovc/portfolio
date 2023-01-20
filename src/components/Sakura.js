@@ -43,9 +43,12 @@ Sakura.prototype.update = function() {
   }
 }
 
-SakuraList = function() {
-  this.list = [];
+class SakuraList {
+  constructor() {
+    this.list = [];
+  }
 }
+
 SakuraList.prototype.push = function(sakura) {
   this.list.push(sakura);
 }
@@ -121,7 +124,7 @@ function startSakura() {
   cxt = canvas.getContext('2d');
   var sakuraList = new SakuraList();
   for(var i = 0; i < 50; i++) {
-    var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
+    var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny, randomFnR;
     randomX = getRandom('x');
     randomY = getRandom('y');
     randomR = getRandom('r');

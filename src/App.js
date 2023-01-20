@@ -17,7 +17,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 //import Snowfall from "react-snowfall";
-//import Sakura from "./components/Sakura";
+import Sakura from "./components/Sakura";
 
 function App() {
   const [load, upadateLoad] = useState(true);
