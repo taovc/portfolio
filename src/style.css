@@ -264,6 +264,7 @@ button:focus {
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/bg.png);
   background-position: top center;
+  background-size:cover;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
@@ -606,7 +607,6 @@ button:focus {
 .about-activity {
   list-style: none !important;
   text-align: left !important;
-  padding-left: 1px !important;
 }
 
 @media (max-width: 767px) {

@@ -1,5 +1,16 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  Button,
+  Navbar,
+  Nav,
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+import { BsGithub } from "react-icons/bs";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import zappy from "../../Assets/Projects/zappy.png";
@@ -9,6 +20,29 @@ import owl from "../../Assets/Projects/owl.png";
 import dataraise from "../../Assets/Projects/dataraise.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import finance from "../../Assets/Projects/finance.png";
+
+function Experiences() {
+  return (
+    <Container className="project-section">
+      <Row className="justify-content-md-center">
+        <Col md={8}>
+          <Card className="project-card-view">
+            <Card.Img variant="top" src={owl} alt="card-img" />
+            <Card.Body style={{ whiteSpace: "pre-line" }}>
+              <Card.Title className="purple_text">{"props.title"}</Card.Title>
+              <Card.Text className="project-card-text">
+                <br></br>
+                <text
+                  dangerouslySetInnerHTML={{ __html: "props.description" }}
+                />
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
 
 function Projects() {
   return (
@@ -21,16 +55,35 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+
+        <Experiences></Experiences>
         <Row className="justify-content-md-center">
           <Col md={8}>
             <ProjectCard
               isBlog={false}
               imgPath={dataraise}
               title="Stage DevOps"
-              description="OWL makes it possible to monitor the condition of a driver using a connected watch and his telephone. If the watch and the telephone detect a state of drowsiness, or that the user is at risk of dozing off, it will notify him and advise him to stop in order to prevent any risk of accident."
+              description="Conteneuriser un projet de service back-end pour un déploiement On Premise
+              (Utilisez des méthodes similaires à docker.)
+              Par la suite de la premiere étape, homologuer le service en mode Cloud (AWS)."
               demoLink="mailto:vincentao2002@gmail.com"
             />
           </Col>{" "}
+        </Row>
+
+        <Row className="justify-content-md-center">
+          <Col md={8}>
+            <ProjectCard
+              imgPath={finance}
+              isBlog={false}
+              title="FinanceAPI"
+              description="A web platform allows for efficient management of orders and invoices.
+              It features a user-friendly dashboard,
+              a comprehensive list of orders, bank statement integration, various services, reimbursement forms, the ability to create new orders, a linked bank account, a complaint management system, and the option to export data in Excel format. To access the platform, authentication is required.
+              To be able to use the platform, you must be authenticated."
+              demoLink="https://nuvoleviaggi.netlify.app/"
+            />
+          </Col>
         </Row>
 
         <Row>
@@ -39,18 +92,10 @@ function Projects() {
               imgPath={owl}
               isBlog={false}
               title="OWL"
-              description="OWL makes it possible to monitor the condition of a driver using a connected watch and his telephone. If the watch and the telephone detect a state of drowsiness, or that the user is at risk of dozing off, it will notify him and advise him to stop in order to prevent any risk of accident."
+              description="OWL makes it possible to monitor the condition of a driver using a connected watch and his telephone.
+              If the watch and the telephone detect a state of drowsiness, or that the user is at risk of dozing off.
+              His phone will notify him and advise him to stop in order to prevent any risk of accident."
               demoLink="mailto:vincentao2002@gmail.com"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={finance}
-              isBlog={false}
-              title="FinanceAPI"
-              description="FinanceApi is A Travel enterprise system that manages billing, employee payroll, tickets sold and customers."
-              demoLink="https://nuvoleviaggi.netlify.app/"
             />
           </Col>
 

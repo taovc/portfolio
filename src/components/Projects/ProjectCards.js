@@ -8,11 +8,11 @@ function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
+      <Card.Body style={{ whiteSpace: "pre-line" }}>
         <Card.Title className="purple_text">{props.title}</Card.Title>
         <Card.Text className="project-card-text">
           <br></br>
-          {props.description}
+          <text dangerouslySetInnerHTML={{__html: props.description}}/>
         </Card.Text>
         {props.ghLink && (
           <Button variant="primary" href={props.ghLink} target="_blank">

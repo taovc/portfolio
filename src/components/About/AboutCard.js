@@ -20,12 +20,19 @@ function AboutCard() {
             Kent University.
             <br />
             <br />
-            <span>I am trilingual, English, French and Chinese, I am very passionate about traveling🧳</span>
+            <span>
+              I am trilingual, English, French and Chinese, I am very passionate
+              about traveling🧳
+            </span>
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
-          <ul>
+          <ul
+            style={{
+              padding: 0,
+            }}
+          >
             <li className="about-activity">
               <CgGames className="icons" /> Playing Games
             </li>
@@ -37,11 +44,6 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "#a588c0" }}>
-            "If A is a success in life, then A = x + y + z.<br></br> Work is x,
-            y is play, and z is keeping your mouth shut."{" "}
-          </p>
-          <footer className="purple_text">--Albert Einstein</footer>
         </blockquote>
       </Card.Body>
     </Card>
