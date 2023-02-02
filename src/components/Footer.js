@@ -1,10 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram, AiFillWechat } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import WechatImg from "../Assets/WeChat.png";
 
 function Footer() {
   let date = new Date();
@@ -24,7 +22,7 @@ function Footer() {
               <a
                 href="https://github.com/taovc"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -32,9 +30,19 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
+                href={WechatImg}
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillWechat />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
                 href="https://www.linkedin.com/in/tao-weijie-880bab1b8/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -44,7 +52,7 @@ function Footer() {
               <a
                 href="https://www.instagram.com/tz_vc/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />

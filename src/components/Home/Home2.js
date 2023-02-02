@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/me.jpg";
+import wechatImg from "../../Assets/WeChat.png";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram, AiFillWechat } from "react-icons/ai";
 import { FaLinkedinIn, FaDocker, FaPython } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
@@ -82,6 +83,16 @@ function Home2() {
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href={wechatImg}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillWechat />
                 </a>
               </li>
               <li className="social-icons">
