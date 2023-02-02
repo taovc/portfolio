@@ -2,10 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/me.jpg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaDocker, FaPython } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
@@ -20,17 +17,16 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Programming is an art, at least in my eyes, like writing
-              poetry.... 📜
+              Programming is an art, like writing poetry.... 📜
               <br />
-              <br />I am fluent in classics like
+              <br />I am proficient in classics like
               <i>
                 <b className="purple">
                   {" "}
                   <SiCplusplus className="icons"></SiCplusplus> C/C++{" "}
                   <DiJavascript className="icons"></DiJavascript>Javascript{" "}
                   <FaDocker className="icons"></FaDocker>
-                  Docker and <FaPython className="icons"></FaPython>Python.{" "}
+                  Docker <FaPython className="icons"></FaPython>Python.{" "}
                 </b>
               </i>
               <br />
@@ -44,9 +40,8 @@ function Home2() {
                 <b className="purple">artificial intelligence.</b>
               </i>
               <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              <br />I also apply my passion for developing products with{" "}
+              <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
                   {" "}
@@ -69,8 +64,14 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME BY</h1>
             <p>
-              Feel free to <a href="mailto:vincentao2002@gmail.com" style={{ color: "#18a4cf" }}>contact </a>
-              with me
+              Feel free to{" "}
+              <a
+                href="mailto:vincentao2002@gmail.com"
+                style={{ color: "#18a4cf" }}
+              >
+                contact{" "}
+              </a>
+              me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
