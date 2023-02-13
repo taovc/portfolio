@@ -743,7 +743,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #7692f85e !important;
+  background-color: #1232c560 !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -754,6 +754,32 @@ button:focus {
   background-color: #4d85d386 !important;
   border-color: #4d87d386 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.fork-dp-inner {
+  position: relative !important;
+  line-height: 0em !important;
+  background-color: #1232c560 !important;
+  width: 70% !important;
+  height: 0% !important;
+  padding-right: 100% !important;
+  padding-left: 5% !important;
+  padding-bottom: 65% !important;
+  padding-top: 0% !important;
+  text-align: center !important;
+  bottom: 2% !important;
+}
+
+.fork-dp-inner:hover {
+  transform: translateY(-2px) !important;
+  background-color: #4d85d386 !important;
+  border-color: #4d87d386 !important;
+}
+
+.fork-dp-inner::after {
+  display: none !important;
+}
+

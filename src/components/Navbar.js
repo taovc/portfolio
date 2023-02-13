@@ -6,6 +6,8 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
+import { AiFillWechat } from "react-icons/ai";
+import wechatImg from "../Assets/WeChat.png";
 
 import {
   AiOutlineHome,
@@ -90,6 +92,17 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> CV
               </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item className="fork-btn">
+              <Button
+                target="_blank"
+                href={wechatImg}
+                className="fork-btn-inner"
+              >
+                <AiFillWechat style={{ fontSize: "1.1em" }} />
+              </Button>
+            </Nav.Item>
+
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/taovc"
@@ -99,6 +112,7 @@ function NavBar() {
                 <BsGithub style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
