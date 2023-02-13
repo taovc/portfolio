@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
@@ -33,7 +33,7 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Snowfall snowflakeCount={20} />
+        <Snowfall snowflakeCount={20} style={{ position: "fixed" }} />
         <Navbar />
         <ScrollToTop />
         <Routes>
