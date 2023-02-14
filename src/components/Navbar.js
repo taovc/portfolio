@@ -8,8 +8,7 @@ import { Link } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import { AiFillWechat } from "react-icons/ai";
 import wechatImg from "../Assets/WeChat.png";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
+import { useTranslation } from "react-i18next";
 
 import {
   AiOutlineHome,
@@ -18,11 +17,23 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { IoLanguageOutline as HiLanguage } from "react-icons/io5";
+import { IoLanguageOutline } from "react-icons/io5";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [language, setLanguage] = useState("en");
+  const { i18n } = useTranslation();
+
+  const changeLanguage = () => {
+    if (language === "ch") {
+      i18n.changeLanguage("en");
+      setLanguage("en");
+    } else {
+      i18n.changeLanguage("ch");
+      setLanguage("ch");
+    }
+  };
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -117,18 +128,15 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
-              <DropdownButton variant="#" className="fork-dp-inner" as={Button}
-                title={<HiLanguage style={{ fontSize: "1.1em" }} />}
+              <Button
+                target="_blank"
+                className="fork-btn-inner"
+                onClick={changeLanguage}
+                disabled="true"
               >
-                <Dropdown.Item className="fork-dp-inner" href="#/action-1">
-                  English
-                </Dropdown.Item>
-                <Dropdown.Item className="fork-dp-inner" href="#/action-2">
-                  Chinese
-                </Dropdown.Item>
-              </DropdownButton>
+                <IoLanguageOutline style={{ fontSize: "1.1em" }} />
+              </Button>
             </Nav.Item>
-
           </Nav>
         </Navbar.Collapse>
       </Container>
