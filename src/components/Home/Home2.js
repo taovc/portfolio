@@ -7,20 +7,24 @@ import { AiFillGithub, AiFillInstagram, AiFillWechat } from "react-icons/ai";
 import { FaLinkedinIn, FaDocker, FaPython } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
+import { useTranslation } from "react-i18next";
 
 function Home2() {
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              {t("LET ME")} <span className="purple"> {t("INTRODUCE")} </span>{" "}
+              {t("MYSELF")}🙋🏻‍♂️
             </h1>
             <p className="home-about-body">
-              Programming is an art, like writing poetry.... 📜
+              {t("Programming is an art, like writing poetry")}..... 📜
               <br />
-              <br />I am proficient in classics like
+              <br /> {t("I am proficient in classics like")}{" "}
               <i>
                 <b className="purple">
                   {" "}
@@ -32,26 +36,26 @@ function Home2() {
               </i>
               <br />
               <br />
-              My field of Interest's are &nbsp;
+              {t("My field of Interest's are")}{" "}
               <i>
                 <b className="purple">
-                  software development, web development, algorithms{" "}
+                  {t("software development, web development, algorithms")},{" "}
                 </b>{" "}
-                and also in areas related to{" "}
-                <b className="purple">artificial intelligence.</b>
+                {t("and also in areas related to")}{" "}
+                <b className="purple">{t("Artificial Intelligence")}.</b>
               </i>
               <br />
-              <br />I also apply my passion for developing products with{" "}
-              <b className="purple">Node.js</b> and
+              <br />
+              {t("I also apply my passion for developing products with")}{" "}
+              <b className="purple">Node.js</b> {t("and")}{" "}
               <i>
                 <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
+                  {t("Modern Javascript Library and Frameworks")}{" "}
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; {t("like")}
               <i>
-                <b className="purple"> React.js, Vue.js and Angular</b>
+                <b className="purple"> React.js, Vue.js Angular</b>
               </i>
             </p>
           </Col>
@@ -63,16 +67,16 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME BY</h1>
+            <h1>{t("FIND ME BY")}</h1>
             <p>
-              Feel free to{" "}
+              {t("Feel free to")}{" "}
               <a
                 href="mailto:vincentao2002@gmail.com"
                 style={{ color: "#18a4cf" }}
               >
-                contact{" "}
+                {t("contact")}{" "}
               </a>
-              me
+              {t("me")}
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

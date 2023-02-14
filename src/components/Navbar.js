@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import { AiFillWechat } from "react-icons/ai";
 import wechatImg from "../Assets/WeChat.png";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 
 import {
   AiOutlineHome,
@@ -16,6 +18,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { IoLanguageOutline as HiLanguage } from "react-icons/io5";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -111,6 +114,19 @@ function NavBar() {
               >
                 <BsGithub style={{ fontSize: "1.1em" }} />
               </Button>
+            </Nav.Item>
+
+            <Nav.Item className="fork-btn">
+              <DropdownButton variant="#" className="fork-dp-inner" as={Button}
+                title={<HiLanguage style={{ fontSize: "1.1em" }} />}
+              >
+                <Dropdown.Item className="fork-dp-inner" href="#/action-1">
+                  English
+                </Dropdown.Item>
+                <Dropdown.Item className="fork-dp-inner" href="#/action-2">
+                  Chinese
+                </Dropdown.Item>
+              </DropdownButton>
             </Nav.Item>
 
           </Nav>
