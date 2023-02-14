@@ -32,7 +32,7 @@ i18n
           "I also apply my passion for developing products with":
             "我也热衷于使用以下技术开发产品：",
           and: "和",
-          "Modern Javascript Library and Frameworks": "现代Javascript库和框架",
+          "Modern Javascript Library and Frameworks": "Javascript主流的库和框架",
           like: "比如",
           "FIND ME BY": "在这里找到我",
           "Feel free to": "随时",
