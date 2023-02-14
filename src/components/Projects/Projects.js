@@ -58,12 +58,10 @@ function Projects() {
               isBlog={false}
               imgPath={dataraise}
               title="Intership DevOps -- DataRaise"
-              description="Conteneuriser un projet de service back-end pour un déploiement On Premise
-              (Utilisez des méthodes similaires à docker.)
-              Par la suite de la premiere étape, homologuer le service en mode Cloud (AWS).
-              technology stack:
-              Docker, Docker-compose, Talend Open Studio. 
-              "
+              description="The objective is to containerize a back-end service project
+              using methods similar to Docker for on-premise deployment.
+              The next step is to certify the service in the cloud environment using AWS.
+              The technology stack for this project includes Docker, Docker-compose, and Talend Open Studio."
               webLink="https://dataraise.com/"
             />
           </Col>{" "}
