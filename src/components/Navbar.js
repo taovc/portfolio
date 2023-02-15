@@ -17,21 +17,20 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { IoLanguageOutline } from "react-icons/io5";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("EN");
   const { i18n } = useTranslation();
 
   const changeLanguage = () => {
-    if (language === "ch") {
-      i18n.changeLanguage("en");
-      setLanguage("en");
+    if (language === "CH") {
+      i18n.changeLanguage("EN");
+      setLanguage("EN");
     } else {
-      i18n.changeLanguage("ch");
-      setLanguage("ch");
+      i18n.changeLanguage("CH");
+      setLanguage("CH");
     }
   };
 
@@ -133,8 +132,7 @@ function NavBar() {
                 to="/"
                 className="fork-btn-inner"
                 onClick={changeLanguage}
-              >
-                <IoLanguageOutline style={{ fontSize: "1.1em" }} />
+              > {language}
               </Button>
             </Nav.Item>
           </Nav>
