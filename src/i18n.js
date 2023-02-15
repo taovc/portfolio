@@ -32,12 +32,42 @@ i18n
           "I also apply my passion for developing products with":
             "我也热衷于使用以下技术开发产品：",
           and: "和",
-          "Modern Javascript Library and Frameworks": "Javascript主流的库和框架",
+          "Modern Javascript Library and Frameworks":
+            "Javascript主流的库和框架",
           like: "比如",
           "FIND ME BY": "在这里找到我",
           "Feel free to": "随时",
           contact: "联系",
           me: "我",
+        },
+      },
+      en: {
+        translation: {
+          Hello: "Hello",
+          "I'M": "I'm",
+          "Tao weijie": "Tao Weijie",
+          "LET ME": "Let me",
+          INTRODUCE: "introduce",
+          MYSELF: "myself",
+          "Programming is an art, like writing poetry":
+            "Programming is an art, like writing poetry",
+          "I am proficient in classics like":
+            "I am proficient in classics like",
+          "My field of Interest's are": "My field of Interest's are",
+          "software development, web development, algorithms":
+            "software development, web development, algorithms",
+          "and also in areas related to": "and also in areas related to",
+          "Artificial Intelligence": "Artificial Intelligence",
+          "I also apply my passion for developing products with":
+            "I also apply my passion for developing products with",
+          and: "and",
+          "Modern Javascript Library and Frameworks":
+            "Modern Javascript Library and Frameworks",
+          like: "like",
+          "FIND ME BY": "FIND ME BY",
+          "Feel free to": "Feel free to",
+          contact: "contact",
+          me: "me",
         },
       },
     },

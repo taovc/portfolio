@@ -59,7 +59,7 @@ function NavBar() {
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
-            updateExpanded(expand ? false : "expanded");
+            updateExpanded(expand ? false : true);
           }}
         >
           <span></span>
@@ -129,10 +129,10 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                target="_blank"
+                as={Link}
+                to="/"
                 className="fork-btn-inner"
                 onClick={changeLanguage}
-                disabled="true"
               >
                 <IoLanguageOutline style={{ fontSize: "1.1em" }} />
               </Button>
