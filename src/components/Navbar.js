@@ -22,14 +22,14 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [language, setLanguage] = useState("EN");
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const changeLanguage = () => {
     if (language === "CH") {
-      i18n.changeLanguage("EN");
+      i18n.changeLanguage("en");
       setLanguage("EN");
     } else {
-      i18n.changeLanguage("CH");
+      i18n.changeLanguage("ch");
       setLanguage("CH");
     }
   };
@@ -69,7 +69,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t("Home")}
               </Nav.Link>
             </Nav.Item>
 
@@ -79,7 +79,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t("About")}
               </Nav.Link>
             </Nav.Item>
 
@@ -92,7 +92,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                {t("Projects")}
               </Nav.Link>
             </Nav.Item>
 
@@ -102,7 +102,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {t("CV")}
               </Nav.Link>
             </Nav.Item>
 
@@ -132,7 +132,9 @@ function NavBar() {
                 to="/"
                 className="fork-btn-inner"
                 onClick={changeLanguage}
-              > {language}
+              >
+                {" "}
+                {language}
               </Button>
             </Nav.Item>
           </Nav>
