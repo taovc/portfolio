@@ -4,7 +4,7 @@ import homeCh from "./lang/Home";
 import aboutCh from "./lang/About";
 
 const resources = {
-  ch: {
+  CH: {
     translation: {
       ...homeCh,
 
@@ -15,8 +15,6 @@ const resources = {
       CV: "简历",
 
       ...aboutCh,
-
-
     },
   },
 };
@@ -28,8 +26,8 @@ i18n
   // 配置参数的文档: https://www.i18next.com/overview/configuration-options
   .init({
     debug: false,
-    fallbackLng: "en",
-    lng: "en",
+    fallbackLng: "EN",
+    lng: "EN",
     interpolation: {
       escapeValue: false,
     },

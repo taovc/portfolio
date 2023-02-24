@@ -17,11 +17,20 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Snowfall from "react-snowfall";
+import { useTranslation } from "react-i18next";
 
 function App() {
   const [load, upadateLoad] = useState(true);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
+    // if localStorage has language, use it
+    if (localStorage.getItem("language")) {
+      i18n.changeLanguage(localStorage.getItem("language"));
+    } else {
+      i18n.changeLanguage("EN");
+    }
+
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
