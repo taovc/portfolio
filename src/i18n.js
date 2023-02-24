@@ -1,23 +1,22 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import homeCh from "./lang/Home";
+import aboutCh from "./lang/About";
 
 const resources = {
   ch: {
     translation: {
       ...homeCh,
 
+      About: "关于",
       ME: "我",
       Home: "主页",
-      About: "关于",
       Projects: "项目",
       CV: "简历",
-      Professional: "专业",
-      Skillset: "技能",
-      Tools: "常用",
-      "I use": "工具",
-      "Days I": "日常",
-      Code: "编程",
+
+      ...aboutCh,
+
+
     },
   },
 };

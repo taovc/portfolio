@@ -1,31 +1,29 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import { CgGames } from "react-icons/cg";
-import { GiAirplane } from "react-icons/gi";
-import { MdCardTravel } from "react-icons/md";
+import { useTranslation } from 'react-i18next';
+import Card from 'react-bootstrap/Card';
+import { CgGames } from 'react-icons/cg';
+import { GiAirplane } from 'react-icons/gi';
+import { MdCardTravel } from 'react-icons/md';
 
 function AboutCard() {
+  const { t } = useTranslation();
+
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Tao Weijie </span>
-            from Paris, France.
+            {t("Hi Everyone, I am")} <span className="purple">{t("Tao Weijie")}</span> {t("from Paris, France.")}
             <br />
-            Currently I'm pursuing{" "}
-            <span className="purple">computer engineer degree </span>at Epitech
-            Paris, and I'm planning to study{" "}
-            <span className="purple">Computational Intelligence MSC.</span>
+            {t("Currently I'm pursuing")} <span className="purple">{t("computer engineer degree")}</span> {t("at Epitech Paris")}{" "} <br />
+            {t("and I'm planning to study")} <span className="purple">{t("Computational Intelligence MSC.")}</span>
             <br />
             <br />
             <span>
-              I'm fluent in English, French and Chinese, I am very passionate
-              about traveling🧳
+              {t("I'm fluent in English, French and Chinese, I am very passionate about traveling")}🧳
             </span>
             <br />
             <br />
-            During my spare time, some other activities that I love to do!
+            {t("During my spare time, some other activities that I love to do!")}
           </p>
           <ul
             style={{
@@ -33,13 +31,13 @@ function AboutCard() {
             }}
           >
             <li className="about-activity">
-              <CgGames className="icons" /> Playing Games
+              <CgGames className="icons" /> {t("Playing Games")}
             </li>
             <li className="about-activity">
-              <GiAirplane className="icons" /> FPV aircraft model
+              <GiAirplane className="icons" /> {t("FPV aircraft model")}
             </li>
             <li className="about-activity">
-              <MdCardTravel className="icons" /> Travelling
+              <MdCardTravel className="icons" /> {t("Travelling")}
             </li>
           </ul>
         </blockquote>
