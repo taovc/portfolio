@@ -128,8 +128,6 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                as={Link}
-                to="/"
                 className="fork-btn-inner"
                 onClick={changeLanguage}
               >

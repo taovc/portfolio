@@ -12,7 +12,7 @@ function Type() {
       "Full Stack Developer",
       "DevOps Engineer",
     ],
-    ch: ["程序员", "Epitech巴黎工程师", "全栈工程师", "DevOps工程师"],
+    ch: ["计算机工程师", "Epitech巴黎工程师", "全栈工程师", "DevOps工程师"],
   };
 
   return (
