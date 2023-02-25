@@ -474,6 +474,7 @@ button:focus {
   position: relative !important;
   text-align: left !important;
   vertical-align: bottom !important;
+  white-space: pre-line !important;
 }
 
 .project-card-view {

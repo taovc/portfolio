@@ -6,13 +6,13 @@ function Type() {
   const { i18n } = useTranslation();
 
   const strings = {
-    en: [
+    EN: [
       "Developer",
       "Engineer Epitech Paris",
       "Full Stack Developer",
       "DevOps Engineer",
     ],
-    ch: ["计算机工程师", "Epitech巴黎工程师", "全栈工程师", "DevOps工程师"],
+    CH: ["计算机工程师", "Epitech巴黎工程师", "全栈工程师", "DevOps工程师"],
   };
 
   return (

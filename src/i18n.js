@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import homeCh from "./lang/Home";
 import aboutCh from "./lang/About";
+import projectCh from "./lang/Project";
 
 const resources = {
   CH: {
@@ -15,6 +16,8 @@ const resources = {
       CV: "简历",
 
       ...aboutCh,
+
+      ...projectCh,
     },
   },
 };

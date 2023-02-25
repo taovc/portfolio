@@ -10,17 +10,20 @@ import owl from "../../Assets/Projects/owl.png";
 import dataraise from "../../Assets/Projects/dataraise.png";
 import smartx from "../../Assets/Projects/smartx.png";
 import finance from "../../Assets/Projects/finance.png";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Projects and<strong className="purple_text"> Experiences </strong>
+          {t("Projects and")}<strong className="purple_text"> {t("Experiences")} </strong>
         </h1>
         <p style={{ color: "white" }}>
-          My work experience and personal projects are listed below.
+          {t("My work experience and personal projects are listed below.")}
         </p>
         <br></br>
         <br></br>
@@ -30,10 +33,8 @@ function Projects() {
             <ProjectCard
               imgPath={smartx}
               isBlog={false}
-              title="Intership Fullstack -- Smartx"
-              description="Maintain an enterprise order management system written in Angular and Mongodb.
-              The system can track the flow of orders, shipping and receiving information, and the status of the products in the warehouse.
-              To access the platform, authentication is required."
+              title={t("Fullstack Developer -- Smartx")}
+              description={t("Maintain an enterprise order management system written in Angular and Mongodb.\n\n The system can track the flow of orders, shipping and receiving information, and the status of the products in the warehouse.\n\n To access the platform, authentication is required.")}
               demoLink="https://e-shop.someflu.org/#/login?returnUrl=%2Fhome"
               webLink="https://www.smart-x.io/"
             />
@@ -42,7 +43,7 @@ function Projects() {
             <ProjectCard
               imgPath={finance}
               isBlog={false}
-              title="Freelance Project -- FinanceAPI"
+              title={t("Freelance Project -- FinanceAPI")}
               description="A web platform allows for efficient management of orders and invoices.
               It features a user-friendly dashboard,
               a comprehensive list of orders, bank statement integration, various services, reimbursement forms,
@@ -57,7 +58,7 @@ function Projects() {
             <ProjectCard
               isBlog={false}
               imgPath={dataraise}
-              title="Intership DevOps -- DataRaise"
+              title={t("DevOps Developer -- DataRaise")}
               description="The objective is to containerize a back-end service project
               using methods similar to Docker for on-premise deployment.
               The next step is to certify the service in the cloud environment using AWS.
