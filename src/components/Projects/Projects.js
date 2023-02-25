@@ -20,7 +20,8 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          {t("Projects and")}<strong className="purple_text"> {t("Experiences")} </strong>
+          {t("Projects and")}
+          <strong className="purple_text"> {t("Experiences")} </strong>
         </h1>
         <p style={{ color: "white" }}>
           {t("My work experience and personal projects are listed below.")}
@@ -34,7 +35,9 @@ function Projects() {
               imgPath={smartx}
               isBlog={false}
               title={t("Fullstack Developer -- Smartx")}
-              description={t("Maintain an enterprise order management system written in Angular and Mongodb.\n\n The system can track the flow of orders, shipping and receiving information, and the status of the products in the warehouse.\n\n To access the platform, authentication is required.")}
+              description={t(
+                "Maintain an enterprise order management system written in Angular Node.js and Mongodb.\n\nLeveraging my expertise in Angular and Mongodb, I successfully implemented a system to track the flow of orders, shipping and receiving information, and the status of products in the warehouse.\n\n My contributions led to an efficient and streamlined order management process, which significantly improved productivity and customer satisfaction.\n\nBy ensuring that authentication is required to access the platform, we maintained the highest level of security for our clients' data."
+              )}
               demoLink="https://e-shop.someflu.org/#/login?returnUrl=%2Fhome"
               webLink="https://www.smart-x.io/"
             />
@@ -44,12 +47,9 @@ function Projects() {
               imgPath={finance}
               isBlog={false}
               title={t("Freelance Project -- FinanceAPI")}
-              description="A web platform allows for efficient management of orders and invoices.
-              It features a user-friendly dashboard,
-              a comprehensive list of orders, bank statement integration, various services, reimbursement forms,
-              the ability to create new orders, a linked bank account, a complaint management system, and the option to export
-              data in Excel format.
-              To be able to use the platform, you must be authenticated."
+              description={t(
+                "It's a web platform built with React, Node.js, and MongoDB, designed to efficiently manage orders and invoices.\n\nThe user-friendly dashboard provides a comprehensive list of orders, along with integration of bank statements and reimbursement forms.\n\nThe platform also includes a Fund Management System and the ability to create new orders and data can be easily exported in Excel format for convenience.\n\nAuthentication is required to access the platform, ensuring security and privacy for all users."
+              )}
               demoLink="https://nuvoleviaggi.netlify.app/"
               isMail={true}
             />
@@ -59,10 +59,9 @@ function Projects() {
               isBlog={false}
               imgPath={dataraise}
               title={t("DevOps Developer -- DataRaise")}
-              description="The objective is to containerize a back-end service project
-              using methods similar to Docker for on-premise deployment.
-              The next step is to certify the service in the cloud environment using AWS.
-              The technology stack for this project includes Docker, Docker-compose, and Talend Open Studio."
+              description={t(
+                "My responsibility was to containerize a Talend Studio back service using Docker and Docker-compose for deployment.\n\nThrough my expertise in containerization and deployment, I successfully implemented this method, resulting in a significant improvement in the project's efficiency and scalability.\n\nContainerization allowed the project to be easily deployed and managed, while Docker-compose enabled the management of multiple containers as a single application.\n\nThis approach not only made the project more efficient but also reduced the time and effort required for deployment and maintenance."
+              )}
               webLink="https://dataraise.com/"
             />
           </Col>{" "}
@@ -74,9 +73,9 @@ function Projects() {
               imgPath={owl}
               isMail={true}
               title="OWL"
-              description="OWL makes it possible to monitor the condition of a driver using a connected watch and his telephone.
-              If the watch and the telephone detect a state of drowsiness, or that the user is at risk of dozing off.
-              His phone will notify him and advise him to stop in order to prevent any risk of accident."
+              description={t(
+                "OWL is a application mobile that makes it possible to monitor the condition of a driver using a connected watch and his telephone.\n\nIf the watch and the telephone detect a state of drowsiness, or that the user is at risk of dozing off.\n\nHis phone will notify him and advise him to stop in order to prevent any risk of accident."
+              )}
             />
           </Col>
 
@@ -85,9 +84,9 @@ function Projects() {
               imgPath={area}
               isBlog={false}
               title="AREA"
-              description="The goal of this project is to discover, as a whole, the software platform that you have chosen through the creation of a business application.
-              you can choice an action and a reaction and create a workflow. For example, you can create a workflow that send you a mail when you receive a mail.
-              "
+              description={t(
+                "The goal of this project is to discover the chosen software platform by creating a business application that utilizes its features.\n\nThis involves selecting an action and a reaction to create a workflow.\n\nFor instance, you can set up a workflow that sends you an email when you receive one."
+              )}
               ghLink="https://github.com/taovc/area"
             />
           </Col>
@@ -97,11 +96,9 @@ function Projects() {
               imgPath={rtype}
               isBlog={false}
               title="R-Type"
-              description="
-              rewrite the R-Type game in C++ with the SFML library, network programming and multithreading.
-              Our game has a graphical interface, a network protocol, a client and a server.
-              the game architecture is the ECS (Entity Component System) architecture.
-              "
+              description={t(
+                "Rewrite the R-Type game using the SFML library, network programming, and multithreading in C++.\n\nOur game includes a graphical interface, a network protocol, a client, and a server.\n\nThe game architecture is based on the ECS (Entity Component System) architecture."
+              )}
             />
           </Col>
 
@@ -110,9 +107,9 @@ function Projects() {
               imgPath={zappy}
               isBlog={false}
               title="Zappy"
-              description="The goal of this project is to create a network game. Several teams confront on a tiles map containing resources. The winning team is the one with 6 players who reached maximum elevation.
-              We will have a web server, ai client and a graphics processor, the server will accept the client's instructions and send information to the graphics processing application.
-              "
+              description={t(
+                "C++ game project, featuring advanced AI technology and dynamic display.\n\nWith our AI system, players can expect challenging gameplay and unpredictable outcomes.\n\nOur server ensures seamless communication between players for a truly interactive gaming experience."
+              )}
             />
           </Col>
         </Row>
