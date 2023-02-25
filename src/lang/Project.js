@@ -12,6 +12,8 @@ const projectCh = {
   "DevOps Developer -- DataRaise": "DevOps工程师 -- DataRaise",
   "My responsibility was to containerize a Talend Studio back service using Docker and Docker-compose for deployment.\n\nThrough my expertise in containerization and deployment, I successfully implemented this method, resulting in a significant improvement in the project's efficiency and scalability.\n\nContainerization allowed the project to be easily deployed and managed, while Docker-compose enabled the management of multiple containers as a single application.\n\nThis approach not only made the project more efficient but also reduced the time and effort required for deployment and maintenance.":
     "我的职责是使用Docker和Docker-compose容器化Talend Studio后端服务以进行部署。\n\n通过我在容器化和部署方面的专业知识，我实现了项目的容器化，从而显著提高了安装的效率和可扩展性。\n\n容器化使项目可以轻松部署和管理，而Docker-compose则允许将多个容器作为单个应用程序进行管理。\n\n这种方法不仅使项目更加高效，而且还减少了部署和维护所需的时间和精力。",
+  "OWL is a mobile application that monitors driver condition through a connected watch and phone.\n\nThe watch and phone can detect signs of drowsiness or the risk of dozing off.\n\nIf such signs are detected, the driver's phone will alert them and advise them to stop to prevent any accidents.":
+    "OWL是一款通过连接手表来检测司机身体指标的手机app。\n\n手表可以检测到疲劳或打盹的迹象并传输给手机。\n\n如果检测到这些迹象，司机的手机将提醒他们并建议他们停车休息以防止事故的发生。",
 };
 
 export default projectCh;

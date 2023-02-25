@@ -74,7 +74,7 @@ function Projects() {
               isMail={true}
               title="OWL"
               description={t(
-                "OWL is a application mobile that makes it possible to monitor the condition of a driver using a connected watch and his telephone.\n\nIf the watch and the telephone detect a state of drowsiness, or that the user is at risk of dozing off.\n\nHis phone will notify him and advise him to stop in order to prevent any risk of accident."
+                "OWL is a mobile application that monitors driver condition through a connected watch and phone.\n\nThe watch and phone can detect signs of drowsiness or the risk of dozing off.\n\nIf such signs are detected, the driver's phone will alert them and advise them to stop to prevent any accidents."
               )}
             />
           </Col>
