@@ -47,7 +47,7 @@ function Home2() {
               <br />
               <br />
               {t("I also apply my passion for developing products with")}{" "}
-              <b className="purple">Node.js</b> {t("and")}{" "}
+              <b className="purple">C++, Golang</b> {t("and")}{" "}
               <i>
                 <b className="purple">
                   {t("Modern Javascript Library and Frameworks")}{" "}
@@ -55,7 +55,7 @@ function Home2() {
               </i>
               &nbsp; {t("like")}
               <i>
-                <b className="purple"> React.js, Vue.js Angular</b>
+                <b className="purple"> React/Next.js, Angular.js, Nest.js</b>
               </i>
             </p>
           </Col>
