@@ -3,6 +3,8 @@ import { initReactI18next } from "react-i18next";
 import homeCh from "./lang/Home";
 import aboutCh from "./lang/About";
 import projectCh from "./lang/Project";
+import Backend from "i18next-http-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 const resources = {
   CH: {
@@ -23,18 +25,20 @@ const resources = {
 };
 
 i18n
-  // 注入 react-i18next 实例
+  .use(Backend)
+  .use(LanguageDetector)
   .use(initReactI18next)
-  // 初始化 i18next
-  // 配置参数的文档: https://www.i18next.com/overview/configuration-options
   .init({
     debug: false,
-    fallbackLng: "EN",
-    lng: "EN",
+    fallbackLng: "en",
+    lng: "en",
     interpolation: {
       escapeValue: false,
     },
-    resources,
+    backend: {
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
+    },
+    // resources,
   });
 
 export default i18n;

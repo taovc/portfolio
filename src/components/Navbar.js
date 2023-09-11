@@ -21,18 +21,18 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const [language, setLanguage] = useState(localStorage.getItem("language") || "EN");
+  const [language, setLanguage] = useState(localStorage.getItem("language") || "en");
   const { t, i18n } = useTranslation();
 
   const changeLanguage = () => {
-    if (language === "CH") {
-      i18n.changeLanguage("EN");
-      setLanguage("EN");
-      localStorage.setItem("language", "EN");
+    if (language === "ch") {
+      i18n.changeLanguage("en");
+      setLanguage("en");
+      localStorage.setItem("language", "en");
     } else {
-      i18n.changeLanguage("CH");
-      setLanguage("CH");
-      localStorage.setItem("language", "CH");
+      i18n.changeLanguage("ch");
+      setLanguage("ch");
+      localStorage.setItem("language", "ch");
     }
   };
 
