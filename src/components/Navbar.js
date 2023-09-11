@@ -5,9 +5,6 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { BsGithub } from "react-icons/bs";
-import { AiFillWechat } from "react-icons/ai";
-import wechatImg from "../Assets/WeChat.png";
 import { useTranslation } from "react-i18next";
 
 import {
@@ -21,7 +18,9 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const [language, setLanguage] = useState(localStorage.getItem("language") || "en");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") || "en"
+  );
   const { t, i18n } = useTranslation();
 
   const changeLanguage = () => {
@@ -71,7 +70,8 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t("Home")}
+                <AiOutlineHome style={{ marginBottom: "2px" }} />{" "}
+                {t("nav-home")}
               </Nav.Link>
             </Nav.Item>
 
@@ -81,7 +81,8 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t("About")}
+                <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
+                {t("nav-about")}
               </Nav.Link>
             </Nav.Item>
 
@@ -94,7 +95,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                {t("Projects")}
+                {t("nav-projects")}
               </Nav.Link>
             </Nav.Item>
 
@@ -104,37 +105,15 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> {t("CV")}
+                <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
+                {t("nav-resume")}
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
-              <Button
-                target="_blank"
-                href={wechatImg}
-                className="fork-btn-inner"
-              >
-                <AiFillWechat style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/taovc"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <BsGithub style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                className="fork-btn-inner"
-                onClick={changeLanguage}
-              >
+              <Button className="fork-btn-inner" onClick={changeLanguage}>
                 {" "}
-                {language}
+                {language.toLocaleUpperCase()}
               </Button>
             </Nav.Item>
           </Nav>
