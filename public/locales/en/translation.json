@@ -6,5 +6,8 @@
 
   "common-hello": "Welcome to my website!",
   "common-i-am": "I am",
-  "common-about": "About"
+  "common-about": "About",
+  
+  "common-introduce": "LET ME INTRODUCE MYSELF",
+  "common-introduce-body": "As a software engineer, I bring the expertise needed to develop your software. I offer regular public classes, programming guidance, and course tutoring.\n\nI excel in various programming languages, including C/C++, Javascript, Docker, and Python, as well as modern frameworks like React.js, Next.js, Nest.js, and Angular. This enables me to create high-quality web applications, websites, mobile applications, and information systems.\n\nWith a strong passion for software development, web development, algorithms, and artificial intelligence, I advocate for agile methodologies and thrive in team settings to deliver exceptional products.\n\nBeyond my professional pursuits, I indulge in my love for travel, constantly seeking to explore and embrace new cultures."
 }

@@ -11,7 +11,6 @@ export default function ContactIcons() {
     <>
       <Row>
         <Col md={12} className="home-about-social">
-          <h1>{t("FIND ME BY")}</h1>
           <p>
             {t("Feel free to")}{" "}
             <a
