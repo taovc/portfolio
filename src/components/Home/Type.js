@@ -8,14 +8,14 @@ function Type() {
   const strings = {
     en: [
       "Developer",
-      "Freelancer",
+      "Computer Course Teacher",
       "Full Stack Developer",
       "Project Lead",
       "DevOps Engineer",
     ],
     ch: [
       "计算机工程师",
-      "自由职业者",
+      "计算机课程老师",
       "项目领导",
       "全栈工程师",
       "DevOps工程师",

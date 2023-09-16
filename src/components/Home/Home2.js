@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/me.jpg";
 import Tilt from "react-parallax-tilt";
-import { FaLinkedinIn, FaDocker, FaPython } from "react-icons/fa";
+import { FaDocker, FaPython } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 import { useTranslation } from "react-i18next";
+import { isMobile } from "react-device-detect";
 
 function Home2() {
   const { t } = useTranslation();
@@ -22,7 +23,8 @@ function Home2() {
             <p className="home-about-body">
               {t("Programming is an art, like writing poetry")}..... 📜
               <br />
-              <br /> {t("I'm familiar with the following programming languages")}{" "}
+              <br />{" "}
+              {t("I'm familiar with the following programming languages")}{" "}
               <i>
                 <b className="purple">
                   {" "}
@@ -57,11 +59,13 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
+          {!isMobile && (
+            <Col md={4} className="myAvtar">
+              <Tilt>
+                <img src={myImg} className="img-fluid" alt="avatar" />
+              </Tilt>
+            </Col>
+          )}
         </Row>
       </Container>
     </Container>
