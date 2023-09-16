@@ -12,16 +12,21 @@ import {
 } from "react-icons/si";
 import { DiJavascript, DiMysql } from "react-icons/di";
 import { useTranslation } from "react-i18next";
-import { isMobile } from "react-device-detect";
+import { useMediaQuery } from "react-responsive";
 
 function Home2() {
   const { t } = useTranslation();
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col
+            xs={"auto"}
+            md={8}
+            className="text-white pt-100 pb-20 text-center"
+          >
             <h1 style={{ fontSize: "2.6em" }}>
               {t("LET ME")} <span className="purple"> {t("INTRODUCE")} </span>{" "}
               {t("MYSELF")}🙋🏻‍♂️{" "}
@@ -77,7 +82,7 @@ function Home2() {
           </Col>
 
           {!isMobile && (
-            <Col md={4} className="myAvtar">
+            <Col xs={4} className="myAvtar">
               <Tilt>
                 <img src={myImg} className="img-fluid" alt="avatar" />
               </Tilt>
