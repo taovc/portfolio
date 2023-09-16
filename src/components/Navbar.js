@@ -75,7 +75,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/about"
@@ -84,7 +84,7 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
                 {t("nav-about")}
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link

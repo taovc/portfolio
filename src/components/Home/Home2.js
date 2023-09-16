@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/me.jpg";
-import wechatImg from "../../Assets/WeChat.png";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiFillInstagram, AiFillWechat } from "react-icons/ai";
 import { FaLinkedinIn, FaDocker, FaPython } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
@@ -24,7 +22,7 @@ function Home2() {
             <p className="home-about-body">
               {t("Programming is an art, like writing poetry")}..... 📜
               <br />
-              <br /> {t("I am proficient in classics like")}{" "}
+              <br /> {t("I'm familiar with the following programming languages")}{" "}
               <i>
                 <b className="purple">
                   {" "}
@@ -63,63 +61,6 @@ function Home2() {
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>{t("FIND ME BY")}</h1>
-            <p>
-              {t("Feel free to")}{" "}
-              <a
-                href="mailto:vincentao2002@gmail.com"
-                style={{ color: "#18a4cf" }}
-              >
-                {t("contact")}{" "}
-              </a>
-              {t("me")}
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/taovc"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href={wechatImg}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillWechat />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/tao-weijie-880bab1b8/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/tz_vc/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
           </Col>
         </Row>
       </Container>

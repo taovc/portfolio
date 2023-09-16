@@ -4,6 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import About from "./About/About";
 import { useTranslation } from "react-i18next";
 
 function Home() {
@@ -45,6 +46,7 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
+      <About />
     </section>
   );
 }
