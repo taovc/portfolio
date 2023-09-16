@@ -2,6 +2,7 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { isMobile } from "react-device-detect";
 
 function Github() {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ function Github() {
         blockSize={15}
         blockMargin={5}
         color="#ad5bc4"
-        fontSize={16}
+        fontSize={isMobile ? 6 : 16}
       />
     </Row>
   );

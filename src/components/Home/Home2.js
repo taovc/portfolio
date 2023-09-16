@@ -2,9 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/me.jpg";
 import Tilt from "react-parallax-tilt";
-import { FaDocker, FaPython } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
-import { DiJavascript } from "react-icons/di";
+import { FaDocker, FaPython, FaReact, FaAngular } from "react-icons/fa";
+import {
+  SiCplusplus,
+  SiNextdotjs,
+  SiNestjs,
+  SiMongodb,
+  SiPostgresql,
+} from "react-icons/si";
+import { DiJavascript, DiMysql } from "react-icons/di";
 import { useTranslation } from "react-i18next";
 import { isMobile } from "react-device-detect";
 
@@ -20,7 +26,54 @@ function Home2() {
               {t("LET ME")} <span className="purple"> {t("INTRODUCE")} </span>{" "}
               {t("MYSELF")}🙋🏻‍♂️{" "}
             </h1>
-            <p className="home-about-body">{t("common-introduce-body")}</p>
+            <p className="home-about-body">
+              {t("common-introduce-body-1")}
+              <i>
+                <b className="purple">
+                  {" "}
+                  {t("common-introduce-body-1-1")}
+                  {"\n\n"}
+                </b>
+              </i>
+              {t("common-introduce-body-2")}
+              <i>
+                <b className="purple">
+                  {" "}
+                  <SiCplusplus className="icons" /> C/C++{" "}
+                  <DiJavascript className="icons" /> Javascript{" "}
+                  <FaDocker className="icons" /> Docker {t("and")}{" "}
+                  <FaPython className="icons" /> Python{" "}
+                </b>
+              </i>
+              <br />
+              <br />
+              {t("common-introduce-body-2-1")}
+              <i>
+                <b className="purple">
+                  {" "}
+                  <FaReact className="icons" /> React.js{" "}
+                  <SiNextdotjs className="icons" /> Next.js{" "}
+                  <FaAngular className="icons" /> Angular.js{" "}
+                  <SiNestjs className="icons" /> Nest.js{" "}
+                </b>
+              </i>
+              {t("common-introduce-body-2-2")}
+              <i>
+                <b className="purple">
+                  {" "}
+                  <SiMongodb className="icons" /> MongoDB{" "}
+                  <SiPostgresql className="icons" /> PostgreSQL {t("and")}{" "}
+                  <DiMysql className="icons" /> MySQL{" "}
+                </b>
+              </i>
+              <br />
+              <br />
+              {t("common-introduce-body-3")}
+              <i>
+                <b className="purple">{t("common-introduce-body-3-1")}</b>
+              </i>
+              {t("common-introduce-body-4")}
+            </p>
           </Col>
 
           {!isMobile && (
