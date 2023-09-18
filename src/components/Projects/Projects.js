@@ -30,7 +30,7 @@ function Projects() {
         <br></br>
         <br></br>
         <Row className="project-card">
-          <Col md={4}>
+          <Col md={6} lg={4}>
             <ProjectCard
               imgPath={smartx}
               isBlog={false}
@@ -42,7 +42,7 @@ function Projects() {
               webLink="https://www.smart-x.io/"
             />
           </Col>
-          <Col md={4}>
+          <Col md={6} lg={4}>
             <ProjectCard
               imgPath={finance}
               isBlog={false}
@@ -54,7 +54,7 @@ function Projects() {
               isMail={true}
             />
           </Col>
-          <Col md={4}>
+          <Col md={6} lg={4}>
             <ProjectCard
               isBlog={false}
               imgPath={dataraise}
@@ -66,9 +66,8 @@ function Projects() {
             />
           </Col>{" "}
         </Row>
-
-        <Row>
-          <Col md={3} className="project-card">
+        <Row className="project-card" >
+          <Col md={6} lg={3} >
             <ProjectCard
               imgPath={owl}
               isMail={true}
@@ -79,7 +78,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={3} className="project-card">
+          <Col md={6} lg={3}>
             <ProjectCard
               imgPath={area}
               isBlog={false}
@@ -91,7 +90,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={3} className="project-card">
+          <Col md={6} lg={3}>
             <ProjectCard
               imgPath={rtype}
               isBlog={false}
@@ -102,7 +101,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={3} className="project-card">
+          <Col md={6} lg={3}>
             <ProjectCard
               imgPath={zappy}
               isBlog={false}
