@@ -1,11 +1,9 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
 import { useMediaQuery } from 'react-responsive';
 
 function Github() {
-  const { t } = useTranslation();
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   return (
