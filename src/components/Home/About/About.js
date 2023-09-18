@@ -8,9 +8,11 @@ import laptopImg from "@/Assets/about.png";
 import Toolstack from "./Toolstack";
 import { useTranslation } from "react-i18next";
 import ContactIcons from "../ContactIcons";
+import { useMediaQuery } from "react-responsive";
 
 function About() {
   const { t } = useTranslation();
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <Container fluid className="about-section">
@@ -38,17 +40,18 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+
         <h1 className="project-heading">
           {t("Professional")}{" "}
           <strong className="purple">{t("Skillset")} </strong>
         </h1>
-
         <Techstack />
         <h1 className="project-heading">
           <strong className="purple">{t("Tools")}</strong> {t("I use")}
         </h1>
         <Toolstack />
-        <Github />
+
+        {!isMobile ?? <Github />}
         <ContactIcons />
       </Container>
     </Container>

@@ -12,17 +12,17 @@ import { useInView } from "react-intersection-observer";
 
 function Toolstack() {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
   const animationProps = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? "translateX(0)" : "translateX(-100%)",
+    transform: inView ? "translateX(0)" : "translateX(100%)",
     config: { duration: 1000 },
   });
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className=" overflow-hidden">
       <animated.div style={animationProps}>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <Col xs={3} md={2} className="tech-icons">
