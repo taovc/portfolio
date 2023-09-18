@@ -8,7 +8,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "left" }}>
             {t("common-service-body-1")}
             <i>
               <b className="purple">
@@ -26,7 +26,9 @@ function AboutCard() {
               </b>
             </i>{" "}
             {t("common-service-body-2-2")}
-
+            <br />
+            <br />
+            {t("common-service-body-3")}
           </p>
         </blockquote>
       </Card.Body>

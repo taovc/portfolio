@@ -12,7 +12,7 @@ export default function ContactIcons() {
       <Row>
         <Col md={12} className="home-about-social">
           <p>
-            {t("Feel free to")}{" "}
+            {t("Click to")}{" "}
             <a
               href="mailto:vincentao2002@gmail.com"
               style={{ color: "#18a4cf" }}
