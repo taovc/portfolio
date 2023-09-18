@@ -14,7 +14,6 @@ function AboutCard() {
               <b className="purple">
                 {" "}
                 {t("common-service-body-1-1")}
-                {"\n\n"}
               </b>
             </i>{" "}
             <br />
@@ -24,9 +23,10 @@ function AboutCard() {
               <b className="purple">
                 {" "}
                 {t("common-service-body-2-1")}
-                {"\n\n"}
               </b>
             </i>{" "}
+            {t("common-service-body-2-2")}
+
           </p>
         </blockquote>
       </Card.Body>

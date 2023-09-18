@@ -18,8 +18,9 @@
 
   "common-services": "SERVICES",
   "common-services-1": "I OFFER",
-  "common-service-body-1": "As a software engineer, I bring the expertise needed to develop your software. I offer a wide range of services, including ",
+  "common-service-body-1": "As a software engineer, I bring the expertise needed to develop your software.\n\n I offer a wide range of services, including ",
   "common-service-body-1-1": "Developing your application, Open Classes, and Programming Guidance. . .",
   "common-service-body-2": "With a strong passion for ",
-  "common-service-body-2-1": "software development, web development, algorithms, and artificial intelligence.\n\n"
+  "common-service-body-2-1": "software development, web development, algorithms, and artificial intelligence.",
+  "common-service-body-2-2": "ensuring tailored solutions for your needs."
 }

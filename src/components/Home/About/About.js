@@ -33,6 +33,7 @@ function About() {
             </h1>
             <Aboutcard />
           </Col>
+
           <Col md={5} style={{ paddingBottom: "50px" }} className="about-img">
             <img
               src={homeLogo}
@@ -52,7 +53,6 @@ function About() {
           <strong className="purple">{t("Tools")}</strong> {t("I use")}
         </h1>
         <Toolstack />
-
         {!isMobile && <Github />}
         <ContactIcons />
       </Container>
