@@ -3,14 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/me.jpg";
 import Tilt from "react-parallax-tilt";
 import { FaDocker, FaPython, FaReact, FaAngular } from "react-icons/fa";
-import {
-  SiCplusplus,
-  SiNextdotjs,
-  SiNestjs,
-  SiMongodb,
-  SiPostgresql,
-} from "react-icons/si";
-import { DiJavascript, DiMysql } from "react-icons/di";
+import { SiCplusplus, SiNextdotjs, SiNestjs } from "react-icons/si";
+import { DiJavascript } from "react-icons/di";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 
@@ -34,12 +28,14 @@ function Home2() {
             <p className="home-about-body">
               {t("common-introduce-body-1")}
               <i>
-                <b className="purple">
-                  {" "}
-                  {t("common-introduce-body-1-1")}
-                  {"\n\n"}
-                </b>
+                <b className="purple"> {t("common-name")}</b>
               </i>
+              {t("common-introduce-body-1-1")}
+
+              <i>
+                <b className="purple"> {t("common-introduce-body-1-2")}</b>
+              </i>
+
               {t("common-introduce-body-2")}
               <i>
                 <b className="purple">
@@ -62,21 +58,13 @@ function Home2() {
                   <SiNestjs className="icons" /> Nest.js{" "}
                 </b>
               </i>
-              {t("common-introduce-body-2-2")}
-              <i>
-                <b className="purple">
-                  {" "}
-                  <SiMongodb className="icons" /> MongoDB{" "}
-                  <SiPostgresql className="icons" /> PostgreSQL {t("and")}{" "}
-                  <DiMysql className="icons" /> MySQL{" "}
-                </b>
-              </i>
               <br />
               <br />
-              {t("common-introduce-body-3")}
+
+              {/* {t("common-introduce-body-3")}
               <i>
                 <b className="purple">{t("common-introduce-body-3-1")}</b>
-              </i>
+              </i> */}
               {t("common-introduce-body-4")}
             </p>
           </Col>

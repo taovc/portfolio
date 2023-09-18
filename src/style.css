@@ -262,7 +262,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/bg.png);
+  /* background-image: var(--image-gradient), url(./Assets/bg.png); */
   background-position: top center;
   background-size:cover;
   background-repeat: no-repeat;

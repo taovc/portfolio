@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -35,12 +34,15 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+              <video autoPlay loop muted className="img-fluid">
+                <source
+                  src={
+                    "https://res.cloudinary.com/djjxcsdai/video/upload/c_fill,h_469,w_488,x_0,y_50/v1695069697/home_fchuum.mp4"
+                  }
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </Col>
           </Row>
         </Container>

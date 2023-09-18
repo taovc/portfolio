@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../../Particle";
+import Particle from "@/components/Particle";
+import homeLogo from "@/Assets/home-main.svg";
 import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "@/Assets/about.png";
 import Toolstack from "./Toolstack";
+import Aboutcard from "./AboutCard";
 import { useTranslation } from "react-i18next";
 import ContactIcons from "../ContactIcons";
 import { useMediaQuery } from "react-responsive";
@@ -28,16 +28,18 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              {t("common-about")} <strong className="purple">{t("ME")}</strong>
+              <strong className="purple"> {t("common-services")}</strong>{" "}
+              {t("common-services-1")}
             </h1>
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+          <Col md={5} style={{ paddingBottom: "50px" }} className="about-img">
+            <img
+              src={homeLogo}
+              alt="home pic"
+              className="img-fluid"
+              style={{ maxHeight: "450px" }}
+            />
           </Col>
         </Row>
 
@@ -51,7 +53,7 @@ function About() {
         </h1>
         <Toolstack />
 
-        {!isMobile ?? <Github />}
+        {!isMobile && <Github />}
         <ContactIcons />
       </Container>
     </Container>

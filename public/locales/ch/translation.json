@@ -13,19 +13,26 @@
   "common-i-am": "我是",
   "common-about": "关于",
 
-  "Tao weijie": "陶伟杰",
+  "common-name": "陶伟杰",
   "LET ME": "让我",
   "INTRODUCE": "介绍一下",
   "MYSELF": "自己",
 
-  "common-introduce-body-1": "资深软件工程师，熟悉软件开发的业务和流程，并且提供以下服务： ",
-  "common-introduce-body-1-1": "项目构建，技术优化，课程辅导. . .",
+  "common-introduce-body-1": "大家好，我是",
+  "common-introduce-body-1-1": "，一名来自法国巴黎的软件工程师。\n\n",
+  "common-introduce-body-1-2": "我在欧洲理工学院获得了工程师学位，并攻读了人工智能物联网的硕士学位。\n\n",
   "common-introduce-body-2": "我熟悉以下主流编程语言： ",
   "common-introduce-body-2-1": "当然，还有一些知名的框架：",
   "common-introduce-body-2-2": "和一些常用的数据库：",
   "common-introduce-body-3": "以下是我热衷的领域：",
   "common-introduce-body-3-1": "桌面/移动端开发，网站开发，物联网和人工智能，\n\n",
   "common-introduce-body-4": "我提倡敏捷开发和构建一个良好的DevOps生态, 对产品交付上精益求精。",
+
+  "common-services": "我提供的",
+  "common-services-1": "服务",
+  "common-service-body-1": "资深软件工程师，熟悉软件开发的业务和流程，并且提供以下服务： ",
+  "common-service-body-1-1": "项目构建，技术优化，课程辅导. . .",
+
 
   "ME": "我",
   "Hi Everyone, I am": "大家好，我是",
