@@ -16,18 +16,15 @@ import { useInView } from "react-intersection-observer";
 
 function Projects() {
   const { t } = useTranslation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-  const animationProps = useSpring({
-    opacity: inView ? 1 : 0,
-    transform: inView ? "translateY(0)" : "translateY(50px)",
-  });
+
   const experiences = [
     {
-      imgPath: "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695138129/portfolio/3e.png",
+      imgPath:
+        "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695138129/portfolio/3e.png",
       title: t("Project Leader -- E.Design"),
-      description: t("Full-stack (Next, Nest, Mongodb, Docker-compose et OVH)\n\n"),
+      description: t(
+        "Full-stack (Next, Nest, Mongodb, Docker-compose et OVH)\n\n"
+      ),
       webLink: "https://www.edesignparis.fr/",
       demoLink: "https://e-shop.someflu.org/#/login?returnUrl=%2Fhome",
     },
@@ -69,19 +66,14 @@ function Projects() {
         <Row className="project-card">
           {experiences.map((project, index) => (
             <Col key={index} md={6} lg={4}>
-              <animated.div
-                ref={ref}
-                style={{ ...animationProps, marginBottom: "20px" }}
-              >
-                <ProjectCard
-                  imgPath={project.imgPath}
-                  isBlog={false}
-                  title={project.title}
-                  description={project.description}
-                  demoLink={project.demoLink}
-                  webLink={project.webLink}
-                />
-              </animated.div>
+              <ProjectCard
+                imgPath={project.imgPath}
+                isBlog={false}
+                title={project.title}
+                description={project.description}
+                demoLink={project.demoLink}
+                webLink={project.webLink}
+              />
             </Col>
           ))}
         </Row>
@@ -91,19 +83,14 @@ function Projects() {
         <Row className="project-card">
           {projects.map((project, index) => (
             <Col key={index} md={6} lg={3}>
-              <animated.div
-                ref={ref}
-                style={{ ...animationProps, marginBottom: "20px" }}
-              >
-                <ProjectCard
-                  imgPath={project.imgPath}
-                  isBlog={false}
-                  title={project.title}
-                  description={project.description}
-                  demoLink={project.demoLink}
-                  webLink={project.webLink}
-                />
-              </animated.div>
+              <ProjectCard
+                imgPath={project.imgPath}
+                isBlog={false}
+                title={project.title}
+                description={project.description}
+                demoLink={project.demoLink}
+                webLink={project.webLink}
+              />
             </Col>
           ))}
         </Row>
