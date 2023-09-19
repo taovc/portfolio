@@ -3,17 +3,51 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import zappy from "../../Assets/Projects/zappy.png";
-import rtype from "../../Assets/Projects/rtype.jpg";
-import area from "../../Assets/Projects/area.png";
-import owl from "../../Assets/Projects/owl.png";
-import dataraise from "../../Assets/Projects/dataraise.png";
-import smartx from "../../Assets/Projects/smartx.png";
-import finance from "../../Assets/Projects/finance.png";
+import zappy from "@/Assets/Projects/zappy.png";
+import rtype from "@/Assets/Projects/rtype.jpg";
+import area from "@/Assets/Projects/area.png";
+import owl from "@/Assets/Projects/owl.png";
+import dataraise from "@/Assets/Projects/dataraise.png";
+import smartx from "@/Assets/Projects/smartx.png";
+import finance from "@/Assets/Projects/finance.png";
 import { useTranslation } from "react-i18next";
+import { useSpring, animated } from "react-spring";
+import { useInView } from "react-intersection-observer";
 
 function Projects() {
   const { t } = useTranslation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+  const animationProps = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? "translateY(0)" : "translateY(50px)",
+  });
+  const experiences = [
+    {
+      imgPath: "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695138129/portfolio/3e.png",
+      title: t("Project Leader -- E.Design"),
+      description: t("Full-stack (Next, Nest, Mongodb, Docker-compose et OVH)\n\n"),
+      webLink: "https://www.edesignparis.fr/",
+      demoLink: "https://e-shop.someflu.org/#/login?returnUrl=%2Fhome",
+    },
+    {
+      imgPath: smartx,
+      title: t("Fullstack Developer -- Smartx"),
+      description: t("Maintain an enterprise order management system..."),
+      webLink: "https://www.smart-x.io/",
+      demoLink: "https://e-shop.someflu.org/#/login?returnUrl=%2Fhome",
+    },
+  ];
+  const projects = [
+    {
+      imgPath: smartx,
+      title: t("Fullstack Developer -- Smartx"),
+      description: t("Maintain an enterprise order management system..."),
+      demoLink: "https://e-shop.someflu.org/#/login?returnUrl=%2Fhome",
+      webLink: "https://www.smart-x.io/",
+    },
+  ];
 
   return (
     <Container fluid className="project-section">
@@ -29,88 +63,49 @@ function Projects() {
         <br></br>
         <br></br>
         <br></br>
+        <h2 className="project-heading">
+          <strong className="purple_text"> {t("Experiences")} </strong>
+        </h2>
         <Row className="project-card">
-          <Col md={6} lg={4}>
-            <ProjectCard
-              imgPath={smartx}
-              isBlog={false}
-              title={t("Fullstack Developer -- Smartx")}
-              description={t(
-                "Maintain an enterprise order management system written in Angular Node.js and Mongodb.\n\nLeveraging my expertise in Angular and Mongodb, I successfully implemented a system to track the flow of orders, shipping and receiving information, and the status of products in the warehouse.\n\n My contributions led to an efficient and streamlined order management process, which significantly improved productivity and customer satisfaction.\n\nBy ensuring that authentication is required to access the platform, we maintained the highest level of security for our clients' data."
-              )}
-              demoLink="https://e-shop.someflu.org/#/login?returnUrl=%2Fhome"
-              webLink="https://www.smart-x.io/"
-            />
-          </Col>
-          <Col md={6} lg={4}>
-            <ProjectCard
-              imgPath={finance}
-              isBlog={false}
-              title={t("Freelance Project -- FinanceAPI")}
-              description={t(
-                "It's a web platform built with React, Node.js, and MongoDB, designed to efficiently manage orders and invoices.\n\nThe user-friendly dashboard provides a comprehensive list of orders, along with integration of bank statements and reimbursement forms.\n\nThe platform also includes a Fund Management System and the ability to create new orders and data can be easily exported in Excel format for convenience.\n\nAuthentication is required to access the platform, ensuring security and privacy for all users."
-              )}
-              demoLink="https://nuvoleviaggi.netlify.app/"
-              isMail={true}
-            />
-          </Col>
-          <Col md={6} lg={4}>
-            <ProjectCard
-              isBlog={false}
-              imgPath={dataraise}
-              title={t("DevOps Developer -- DataRaise")}
-              description={t(
-                "My responsibility was to containerize a Talend Studio back service using Docker and Docker-compose for deployment.\n\nThrough my expertise in containerization and deployment, I successfully implemented this method, resulting in a significant improvement in the project's efficiency and scalability.\n\nContainerization allowed the project to be easily deployed and managed, while Docker-compose enabled the management of multiple containers as a single application.\n\nThis approach not only made the project more efficient but also reduced the time and effort required for deployment and maintenance."
-              )}
-              webLink="https://dataraise.com/"
-            />
-          </Col>{" "}
+          {experiences.map((project, index) => (
+            <Col key={index} md={6} lg={4}>
+              <animated.div
+                ref={ref}
+                style={{ ...animationProps, marginBottom: "20px" }}
+              >
+                <ProjectCard
+                  imgPath={project.imgPath}
+                  isBlog={false}
+                  title={project.title}
+                  description={project.description}
+                  demoLink={project.demoLink}
+                  webLink={project.webLink}
+                />
+              </animated.div>
+            </Col>
+          ))}
         </Row>
-        <Row className="project-card" >
-          <Col md={6} lg={3} >
-            <ProjectCard
-              imgPath={owl}
-              isMail={true}
-              title="OWL"
-              description={t(
-                "OWL is a mobile application that monitors driver condition through a connected watch and phone.\n\nThe watch and phone can detect signs of drowsiness or the risk of dozing off.\n\nIf such signs are detected, the driver's phone will alert them and advise them to stop to prevent any accidents."
-              )}
-            />
-          </Col>
-
-          <Col md={6} lg={3}>
-            <ProjectCard
-              imgPath={area}
-              isBlog={false}
-              title="AREA"
-              description={t(
-                "The goal of this project is to discover the chosen software platform by creating a business application that utilizes its features.\n\nThis involves selecting an action and a reaction to create a workflow.\n\nFor instance, you can set up a workflow that sends you an email when you receive one."
-              )}
-              ghLink="https://github.com/taovc/area"
-            />
-          </Col>
-
-          <Col md={6} lg={3}>
-            <ProjectCard
-              imgPath={rtype}
-              isBlog={false}
-              title="R-Type"
-              description={t(
-                "Rewrite the R-Type game using the SFML library, network programming, and multithreading in C++.\n\nOur game includes a graphical interface, a network protocol, a client, and a server.\n\nThe game architecture is based on the ECS (Entity Component System) architecture."
-              )}
-            />
-          </Col>
-
-          <Col md={6} lg={3}>
-            <ProjectCard
-              imgPath={zappy}
-              isBlog={false}
-              title="Zappy"
-              description={t(
-                "C++ game project, featuring advanced AI technology and dynamic display.\n\nWith our AI system, players can expect challenging gameplay and unpredictable outcomes.\n\nOur server ensures seamless communication between players for a truly interactive gaming experience."
-              )}
-            />
-          </Col>
+        <h2 className="project-heading">
+          <strong className="blue_text"> {t("Projects")} </strong>
+        </h2>
+        <Row className="project-card">
+          {projects.map((project, index) => (
+            <Col key={index} md={6} lg={3}>
+              <animated.div
+                ref={ref}
+                style={{ ...animationProps, marginBottom: "20px" }}
+              >
+                <ProjectCard
+                  imgPath={project.imgPath}
+                  isBlog={false}
+                  title={project.title}
+                  description={project.description}
+                  demoLink={project.demoLink}
+                  webLink={project.webLink}
+                />
+              </animated.div>
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>

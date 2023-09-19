@@ -18,9 +18,7 @@ function Home() {
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 {t("common-hello")}{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
+                <span className="wave" role="img" aria-labelledby="wave"></span>
               </h1>
 
               <h1 className="heading-name">
@@ -37,7 +35,7 @@ function Home() {
               <video autoPlay loop muted className="img-fluid">
                 <source
                   src={
-                    "https://res.cloudinary.com/djjxcsdai/video/upload/c_fill,h_469,w_488,x_0,y_50/v1695069697/home_fchuum.mp4"
+                    "https://res.cloudinary.com/djjxcsdai/video/upload/c_fill,h_469,w_488,x_0,y_50/v1695069697/portfolio/home_fchuum.mp4"
                   }
                   type="video/mp4"
                 />

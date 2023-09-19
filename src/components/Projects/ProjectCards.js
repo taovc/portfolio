@@ -3,12 +3,19 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite, CgMail } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { RiFilePpt2Line} from "react-icons/ri";
 
 function ProjectCards(props) {
   const buttonInfo = [
     {
+      icon: <CgWebsite />,
+      label: "Web Site",
+      link: props.webLink,
+      isHidden: !props.webLink,
+    },
+    {
       icon: <BsGithub />,
-      label: props.isBlog ? "Blog" : "GitHub",
+      label: "GitHub",
       link: props.ghLink,
       isHidden: !props.ghLink,
     },
@@ -19,16 +26,10 @@ function ProjectCards(props) {
       isHidden: !props.isMail,
     },
     {
-      icon: <CgWebsite />,
+      icon: <RiFilePpt2Line />,
       label: "Demo",
       link: props.demoLink,
-      isHidden: !props.demoLink && !props.isBlog,
-    },
-    {
-      icon: <CgWebsite />,
-      label: "Web Site",
-      link: props.webLink,
-      isHidden: !props.webLink,
+      isHidden: !props.demoLink,
     },
   ];
 
