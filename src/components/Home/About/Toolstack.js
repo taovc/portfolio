@@ -6,9 +6,21 @@ import {
   SiPostman,
   SiHeroku,
   SiTrello,
+  SiNginx,
+  SiIcloud,
 } from "react-icons/si";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
+
+const techStacks = [
+  { icon: <SiLinux />, name: "Linux" },
+  { icon: <SiNginx />, name: "Nginx" },
+  { icon: <SiIcloud />, name: "VPS" },
+  { icon: <SiVisualstudiocode />, name: "VS Code" },
+  { icon: <SiPostman />, name: "Postman" },
+  { icon: <SiTrello />, name: "Trello" },
+  { icon: <SiHeroku />, name: "Heroku" },
+];
 
 function Toolstack() {
   const [ref, inView] = useInView({
@@ -25,21 +37,18 @@ function Toolstack() {
     <div ref={ref} className=" overflow-hidden">
       <animated.div style={animationProps}>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Col xs={3} md={2} className="tech-icons">
-            <SiLinux />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <SiVisualstudiocode />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <SiPostman />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <SiTrello />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <SiHeroku />
-          </Col>
+          {techStacks.map((tech, index) => (
+            <Col
+              key={index}
+              xs={3}
+              sm={3}
+              md={2}
+              className="tech-icons text-center"
+            >
+              {tech.icon}
+              <p style={{ fontSize: "15px" }}>{tech.name}</p>
+            </Col>
+          ))}
         </Row>
       </animated.div>
     </div>

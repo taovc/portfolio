@@ -4,15 +4,29 @@ import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
-  DiNodejs,
   DiMongodb,
   DiPython,
   DiGit,
 } from "react-icons/di";
 import { FaDocker, FaAngular } from "react-icons/fa";
 import { useSpring, animated } from "react-spring";
+import { SiNextdotjs, SiNestjs } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 import { TbApi } from "react-icons/tb";
+
+const techStacks = [
+  { icon: <CgCPlusPlus />, name: "C++" },
+  { icon: <DiJavascript1 />, name: "JavaScript" },
+  { icon: <SiNextdotjs />, name: "Next.js" },
+  { icon: <SiNestjs />, name: "Nest.js" },
+  { icon: <DiReact />, name: "React" },
+  { icon: <DiMongodb />, name: "MongoDB" },
+  { icon: <TbApi />, name: "API" },
+  { icon: <DiGit />, name: "Git" },
+  { icon: <FaDocker />, name: "Docker" },
+  { icon: <DiPython />, name: "Python" },
+  { icon: <FaAngular />, name: "Angular" },
+];
 
 function Techstack() {
   const [ref, inView] = useInView({
@@ -29,36 +43,18 @@ function Techstack() {
     <div ref={ref}>
       <animated.div style={animationProps}>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Col xs={3} md={2} className="tech-icons">
-            <CgCPlusPlus />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <DiJavascript1 />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <DiNodejs />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <DiReact />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <DiMongodb />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <TbApi />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <DiGit />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <FaDocker />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <DiPython />
-          </Col>
-          <Col xs={3} md={2} className="tech-icons">
-            <FaAngular />
-          </Col>
+          {techStacks.map((tech, index) => (
+            <Col
+              key={index}
+              xs={3}
+              sm={3}
+              md={2}
+              className="tech-icons text-center"
+            >
+              {tech.icon}
+              <p style={{ fontSize: "15px" }}>{tech.name}</p>
+            </Col>
+          ))}
         </Row>
       </animated.div>
     </div>
