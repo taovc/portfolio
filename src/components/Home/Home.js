@@ -5,9 +5,11 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import About from "./About/About";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "react-responsive";
 
 function Home() {
   const { t } = useTranslation();
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <section>
@@ -32,7 +34,7 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <video autoPlay loop muted className="img-fluid">
+              <video autoPlay={!isMobile} loop muted className="img-fluid">
                 <source
                   src={
                     "https://res.cloudinary.com/djjxcsdai/video/upload/c_fill,h_469,w_488,x_0,y_50/v1695069697/portfolio/home_fchuum.mp4"
