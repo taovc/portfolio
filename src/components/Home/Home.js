@@ -47,7 +47,7 @@ function Home() {
               ) : (
                 <img
                   src={
-                    "https://res.cloudinary.com/djjxcsdai/image/upload/c_fill,h_469,w_488,x_0,y_50/v1695222557/portfolio/home_sb65g2.png"
+                    "https://res.cloudinary.com/djjxcsdai/image/upload/v1695223050/portfolio/home_edtrbk.png"
                   }
                   alt="home pic"
                   className="img-fluid"
