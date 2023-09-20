@@ -3,9 +3,12 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite, CgMail } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import { RiFilePpt2Line} from "react-icons/ri";
+import { RiFilePpt2Line } from "react-icons/ri";
+import { useMediaQuery } from "react-responsive";
 
 function ProjectCards(props) {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   const buttonInfo = [
     {
       icon: <CgWebsite />,
@@ -33,13 +36,21 @@ function ProjectCards(props) {
     },
   ];
 
+  console.log(isMobile);
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body style={{ paddingBottom: "50px", position: "relative" }}>
         <Card.Title className="purple_text">{props.title}</Card.Title>
         <br></br>
-        <Card.Text className="project-card-text">{props.description}</Card.Text>
+        <Card.Text
+          className="project-card-text"
+          style={{
+            fontSize: isMobile === true ? "8px" : "16px",
+          }}
+        >
+          {props.description}
+        </Card.Text>
         <div
           style={{
             display: "flex",
