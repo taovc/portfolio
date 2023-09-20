@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import area from "@/Assets/Projects/area.png";
-import owl from "@/Assets/Projects/owl.png";
+// import area from "@/Assets/Projects/area.png";
+// import owl from "@/Assets/Projects/owl.png";
 import smartx from "@/Assets/Projects/smartx.png";
 import finance from "@/Assets/Projects/finance.png";
 import { useTranslation } from "react-i18next";
@@ -38,7 +38,8 @@ function Projects() {
   ];
   const projects = [
     {
-      imgPath: "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695213143/portfolio/evogue_hfbdac.png",
+      imgPath:
+        "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695213143/portfolio/evogue_hfbdac.png",
       title: t("Programming teacher -- Evogue"),
       description: t("project-4"),
       webLink: "https://www.evogue.fr/",
@@ -46,12 +47,7 @@ function Projects() {
     {
       imgPath: finance,
       title: t("Freelance Project -- FinanceAPI"),
-      description: t(
-        "Full-stack (React, Node, Mongodb, Docker-compose and netlify)\n\n\
-        It's an ERP system that supports invoice management and ordering. \n\
-        You can easily import/export excel files to process customer information.\n\n\
-        This system allows you to process customer data more easily and efficiently."
-      ),
+      description: t("project-5"),
       demoLink: "https://nuvoleviaggi.netlify.app/",
     },
   ];
