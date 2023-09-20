@@ -34,15 +34,25 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <video autoPlay={!isMobile} loop muted className="img-fluid">
-                <source
+              {!isMobile ? (
+                <video autoPlay loop muted className="img-fluid">
+                  <source
+                    src={
+                      "https://res.cloudinary.com/djjxcsdai/video/upload/c_fill,h_469,w_488,x_0,y_50/v1695069697/portfolio/home_fchuum.mp4"
+                    }
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img
                   src={
-                    "https://res.cloudinary.com/djjxcsdai/video/upload/c_fill,h_469,w_488,x_0,y_50/v1695069697/portfolio/home_fchuum.mp4"
+                    "https://res.cloudinary.com/djjxcsdai/image/upload/c_fill,h_469,w_488,x_0,y_50/v1695222557/portfolio/home_sb65g2.png"
                   }
-                  type="video/mp4"
+                  alt="home pic"
+                  className="img-fluid"
                 />
-                Your browser does not support the video tag.
-              </video>
+              )}
             </Col>
           </Row>
         </Container>
