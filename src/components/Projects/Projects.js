@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import area from "@/Assets/Projects/area.png";
 import owl from "@/Assets/Projects/owl.png";
 import smartx from "@/Assets/Projects/smartx.png";
 import finance from "@/Assets/Projects/finance.png";
@@ -36,14 +35,14 @@ function Projects() {
     {
       imgPath:
         "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695138129/portfolio/3e.png",
-      title: t("Project Leader -- E.Design"),
+      title: t("project-1-h"),
       description: t("project-1"),
       webLink: "https://www.edesignparis.fr/",
       demoLink: "http://test.e-textile.info/en",
     },
     {
       imgPath: smartx,
-      title: t("Fullstack Developer -- Smartx"),
+      title: t("project-2-h"),
       description: t("project-2"),
       webLink: "https://www.smart-x.io/",
       demoLink: "https://e-shop.someflu.org/#/login?returnUrl=%2Fhome",
@@ -51,7 +50,7 @@ function Projects() {
     {
       imgPath:
         "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695208745/portfolio/dataraise_nl08eq.png",
-      title: t("DevOps Developer -- Dataraise"),
+      title: t("project-3-h"),
       description: t("project-3"),
       webLink: "https://www.dataraise.com/",
     },
@@ -89,11 +88,11 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          {t("Projects and")}
+          {t("Projects")} {t("and")}{" "}
           <strong className="purple_text"> {t("Experiences")} </strong>
         </h1>
         <p style={{ color: "white" }}>
-          {t("My work experience and personal projects are listed below.")}
+          {t("project-subtitle")}
         </p>
         <br></br>
         <br></br>
