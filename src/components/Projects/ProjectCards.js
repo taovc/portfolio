@@ -8,7 +8,6 @@ import { useMediaQuery } from "react-responsive";
 
 function ProjectCards(props) {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-
   const buttonInfo = [
     {
       icon: <CgWebsite />,
@@ -36,7 +35,6 @@ function ProjectCards(props) {
     },
   ];
 
-  console.log(isMobile);
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />

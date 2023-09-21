@@ -8,9 +8,29 @@ import owl from "@/Assets/Projects/owl.png";
 import smartx from "@/Assets/Projects/smartx.png";
 import finance from "@/Assets/Projects/finance.png";
 import { useTranslation } from "react-i18next";
+import { useSpring, animated } from "react-spring";
+import { useInView } from "react-intersection-observer";
 
 function Projects() {
   const { t } = useTranslation();
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+  const animationProps = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? "translateX(0px)" : "translateX(-50px)",
+    config: { duration: 1000 },
+  });
+  const animationProps2 = useSpring({
+    opacity: inView2 ? 1 : 0,
+    transform: inView2 ? "translateX(0px)" : "translateX(50px)",
+    config: { duration: 1000 },
+  });
 
   const experiences = [
     {
@@ -81,38 +101,42 @@ function Projects() {
         <h2 className="project-heading">
           <strong className="purple_text"> {t("Experiences")} </strong>
         </h2>
-        <Row className="project-card">
-          {experiences.map((project, index) => (
-            <Col key={index} md={6} lg={4}>
-              <ProjectCard
-                imgPath={project.imgPath}
-                isBlog={false}
-                title={project.title}
-                description={project.description}
-                demoLink={project.demoLink}
-                webLink={project.webLink}
-              />
-            </Col>
-          ))}
-        </Row>
+        <animated.div style={animationProps} ref={ref}>
+          <Row className="project-card">
+            {experiences.map((project, index) => (
+              <Col key={index} md={6} lg={4}>
+                <ProjectCard
+                  imgPath={project.imgPath}
+                  isBlog={false}
+                  title={project.title}
+                  description={project.description}
+                  demoLink={project.demoLink}
+                  webLink={project.webLink}
+                />
+              </Col>
+            ))}
+          </Row>
+        </animated.div>
         <h2 className="project-heading">
           <strong className="blue_text"> {t("Projects")} </strong>
         </h2>
-        <Row className="project-card">
-          {projects.map((project, index) => (
-            <Col key={index} md={6} lg={3}>
-              <ProjectCard
-                imgPath={project.imgPath}
-                isBlog={false}
-                title={project.title}
-                description={project.description}
-                demoLink={project.demoLink}
-                webLink={project.webLink}
-                ghLink={project.ghLink}
-              />
-            </Col>
-          ))}
-        </Row>
+        <animated.div style={animationProps2} ref={ref2}>
+          <Row className="project-card">
+            {projects.map((project, index) => (
+              <Col key={index} md={6} lg={3}>
+                <ProjectCard
+                  imgPath={project.imgPath}
+                  isBlog={false}
+                  title={project.title}
+                  description={project.description}
+                  demoLink={project.demoLink}
+                  webLink={project.webLink}
+                  ghLink={project.ghLink}
+                />
+              </Col>
+            ))}
+          </Row>
+        </animated.div>
       </Container>
     </Container>
   );
