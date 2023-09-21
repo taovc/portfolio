@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import area from "@/Assets/Projects/area.png";
-// import owl from "@/Assets/Projects/owl.png";
+import area from "@/Assets/Projects/area.png";
+import owl from "@/Assets/Projects/owl.png";
 import smartx from "@/Assets/Projects/smartx.png";
 import finance from "@/Assets/Projects/finance.png";
 import { useTranslation } from "react-i18next";
@@ -49,6 +49,18 @@ function Projects() {
       title: t("Freelance Project -- FinanceAPI"),
       description: t("project-5"),
       demoLink: "https://nuvoleviaggi.netlify.app/",
+    },
+    {
+      imgPath:
+        "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695292832/area_d6mi5m.png",
+      title: t("Area"),
+      description: t("project-6"),
+      ghLink: "https://github.com/taovc/area",
+    },
+    {
+      imgPath: owl,
+      title: t("Owl"),
+      description: t("project-7"),
     },
   ];
 
@@ -96,6 +108,7 @@ function Projects() {
                 description={project.description}
                 demoLink={project.demoLink}
                 webLink={project.webLink}
+                ghLink={project.ghLink}
               />
             </Col>
           ))}
