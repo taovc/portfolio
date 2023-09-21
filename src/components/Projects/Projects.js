@@ -59,26 +59,26 @@ function Projects() {
     {
       imgPath:
         "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695213143/portfolio/evogue_hfbdac.png",
-      title: t("Programming teacher -- Evogue"),
+      title: t("project-4-h"),
       description: t("project-4"),
       webLink: "https://www.evogue.fr/",
     },
     {
       imgPath: finance,
-      title: t("Freelance Project -- FinanceAPI"),
+      title: t("project-5-h"),
       description: t("project-5"),
       demoLink: "https://nuvoleviaggi.netlify.app/",
     },
     {
       imgPath:
         "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695292832/area_d6mi5m.png",
-      title: t("Area"),
+      title: t("project-6-h"),
       description: t("project-6"),
       ghLink: "https://github.com/taovc/area",
     },
     {
       imgPath: owl,
-      title: t("Owl"),
+      title: t("project-7-h"),
       description: t("project-7"),
     },
   ];

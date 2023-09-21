@@ -29,14 +29,18 @@
   "common-experiences": "EXPERIENCES",
   "project-subtitle": "My work experience and personal projects are listed below.",
   "project-1-h": "Project Leader -- E.Design",
-  "project-1": "Full-stack (Next, Nest, Mongodb, Docker-compose, and Cloud VPS + Nginx.)\n\nBuilt an e-commerce site allowing customers to purchase personalized clothing.\nIntegrated Stripe, Google, and Cloudinary APIs for an enhanced user experience.\nImplemented a highly modular backend server adhering to REST standards.\n\nDeployed test and production versions using technologies such as Docker Compose on the OVH server with nginx configured.",
+  "project-1": "Full-stack (Next, Nest, Mongodb, Docker-compose, and Cloud VPS + Nginx.)\n\nBuilt an e-commerce site allowing customers to purchase personalized clothing.Support administrators to manage products and orders.\nIntegrated Stripe, Google, and Cloudinary APIs for online payments and enhanced user experience.\nImplemented a highly modular backend server adhering to REST standards.\n\nDeployed test and production versions using technologies such as Docker Compose on the OVH server with nginx configured.",
   "project-2-h": "Fullstack Developer -- Smartx",
-  "project-2": "Full-stack (Angular, Nodejs, Express, Mongodb, Docker-compose)\n\nMaintaining an administration interface for managing orders, inventory, and generating personalized invoices using technologies such as Angular and Tailwind CSS.\n\nThe server is based on a microservices architecture with Hapi, and deployment is automated using to GitLab CI/CD and Docker Compose.",
+  "project-2": "Full-stack (Angular, Nodejs, Express, Mongodb, Docker-compose)\n\nDeveloper a ERP system and maintaining an administration interface for managing orders, inventory, and generating personalized invoices.\n\nThe server is based on a microservices architecture with Hapi, and deployment is automated using to GitLab CI/CD and Docker Compose.\n\nIntegrate service workers and PWA to improve user experience.",
   "project-3-h": "DevOps Developer -- Dataraise",
   "project-3": "DevOps (docker-compose, Apache Hadoop with Talent Studio)\n\nContainerize a back-end service project for OnPremise deployment. Use docker, docker-compose and dockerHub to reduce installation costs.\n\nFollowing the first step, approve the service in Cloud mode (AWS).",
 
+  "project-4-h": "Programming teacher -- Evogue",
   "project-4": "Programming teacher\n(Application development, DevOps, Microservices, AIoT)\n\nPreparation of PowerPoint presentations, exercises, and tutorials.\n\nProposal of DevOps, application development, and microservices courses to a group of around twenty people.\n\n.",
+  "project-5-h": "Freelance Project -- FinanceAPI",
   "project-5": "Full-stack (React, Node, Mongodb, Docker-compose and netlify)\n\nIt's an ERP system that supports invoice management and ordering. \nYou can easily import/export excel files to process customer information.\n\nThis system allows you to process customer data more easily and efficiently.",
-  "project-6": "The goal of this project is to discover the chosen software platform by creating a business application that utilizes its features.\n\nThis involves selecting an action and a reaction to create a workflow.\n\nFor example, you can set up a workflow that sends you an email when you receive one.",
+  "project-6-h": "Full-stack Project -- Area",
+  "project-6": "Create a platform to automate office processes and integrate popular APIs to improve users' work efficiency.\n\nAllows the user to select a trigger and a reactor to create a workflow.\n\nFor example:\nTrigger: When you receive an email with an appointment time.\nReactor: Auto respond the emails and adds appointment to your calendar.",
+  "project-7-h": "Iot Project -- OWL",
   "project-7": "OWL is a mobile application that monitors driver condition through a connected watch and phone.\n\nThe watch and phone can detect signs of drowsiness or the risk of dozing off.\n\nIf such signs are detected, the driver's phone will alert them and advise them to stop to prevent any accidents."
 }

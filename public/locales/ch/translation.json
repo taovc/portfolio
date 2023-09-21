@@ -45,10 +45,19 @@
   "Experiences": "工作经历",
   "Projects": "项目",
   "project-subtitle": "下面是我的工作经历和项目经验",
-  "project-1-h": "Project Leader -- E.Design",
-  "project-1": "Full-stack (Next, Nest, Mongodb, Docker-compose, and Cloud VPS + Nginx.)\n\nBuilt an e-commerce site allowing customers to purchase personalized clothing.\nIntegrated Stripe, Google, and Cloudinary APIs for an enhanced user experience.\nImplemented a highly modular backend server adhering to REST standards.\n\nDeployed test and production versions using technologies such as Docker Compose on the OVH server with nginx configured.",
-  "project-2-h": "Fullstack Developer -- Smartx",
-  "project-2": "Full-stack (Angular, Nodejs, Express, Mongodb, Docker-compose)\n\nMaintaining an administration interface for managing orders, inventory, and generating personalized invoices using technologies such as Angular and Tailwind CSS.\n\nThe server is based on a microservices architecture with Hapi, and deployment is automated using to GitLab CI/CD and Docker Compose.",
-  "project-3-h": "DevOps Developer -- Dataraise",
-  "project-3": "DevOps (docker-compose, Apache Hadoop with Talent Studio)\n\nContainerize a back-end service project for OnPremise deployment. Use docker, docker-compose and dockerHub to reduce installation costs.\n\nFollowing the first step, approve the service in Cloud mode (AWS)."
+  "project-1-h": "项目负责人 -- E.Design",
+  "project-1": "全栈 (Next, Nest, Mongodb, Docker-compose, and Cloud VPS + Nginx.)\n\n建立了一个电子商务网站，允许客户购买个性化的服装。支持管理员界面，支持库存产品管理等操作。\n\n集成了Stripe，Google和Cloudinary API，支持在线支付和快速注册登入，为用户提供了更好的体验。\n\n实现了一个高度模块化的后端服务器，遵循REST标准，集成日志，错误定位。\n\n使用Docker Compose和Nginx在OVH服务器上配置了测试和生产版本。",
+  "project-2-h": "全栈开发 -- Smartx",
+  "project-2": "全栈 (Angular, Nodejs, Express, Mongodb, Docker-compose)\n\n全栈开发并维护一个Erp系统，用于企业级的订单，库存和发票等管理。\n\n服务器基于Hapi的微服务架构，使用GitLab CI/CD和Docker Compose进行自动化部署。\n\n集成service worker和PWA，以提高用户体验。",
+  "project-3-h": "DevOps开发 -- Dataraise",
+  "project-3": "DevOps (docker-compose, Apache Hadoop with Talent Studio)\n\n将基于Apache的esb后端服务项目容器化，并且上传到云端服务器。使用docker，docker-compose和dockerHub等技术来实现快速部署。\n\n在第一步之后，尝试使用云服务(AWS,OVH...)来给客户提供更流畅的体验中的服务。",
+  
+  "project-4-h": "编程老师 -- Evogue",
+  "project-4": "编程老师 (软件开发，DevOps，微服务，人工智能物联网)\n\n准备PowerPoint演示文稿，练习和教程。\n\n向约20人的小组辅导DevOps，应用程序开发和微服务等课程。\n\n.",
+  "project-5-h": "接单项目 -- FinanceAPI",
+  "project-5": "全栈 (React, Node, Mongodb, Docker-compose and netlify)\n\n这是一个支持发票管理和订单的ERP系统。\n您可以轻松地导入/导出Excel文件以处理客户信息。\n\n该系统可以让您更轻松，更有效地处理客户数据。",
+  "project-6-h": "全栈项目 -- Area",
+  "project-6": "创建一个自动化办公流程的平台，集成主流的Api，提高用户的工作效率。\n\n允许用户选择一个触发器和一个反应器来创建一个工作流。\n\n例如：\n触发器：当您收到一封带有预约时间电子邮件。\n反应器：它会使用预设的文案自动回复邮件并添加到日历安排。",
+  "project-7-h": "物联网项目 -- OWL",
+  "project-7": "一款通过连接的手表和手机监控驾驶员状况的移动应用程序。\n\n手表和手机可以检测到疲劳或打瞌睡的风险。\n\n如果检测到这些迹象，驾驶员的手机将提醒他们并建议他们停下来以防止任何事故。"
 }
