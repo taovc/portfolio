@@ -8,24 +8,26 @@ import {
   DiPython,
   DiGit,
 } from "react-icons/di";
-import { FaDocker, FaAngular } from "react-icons/fa";
+import { FaDocker, FaAngular, FaVuejs } from "react-icons/fa";
 import { useSpring, animated } from "react-spring";
-import { SiNextdotjs, SiNestjs } from "react-icons/si";
+import { SiNextdotjs, SiNestjs, SiNuxtdotjs } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 import { TbApi } from "react-icons/tb";
 
 const techStacks = [
-  { icon: <CgCPlusPlus />, name: "C++" },
-  { icon: <DiJavascript1 />, name: "JavaScript" },
+  { icon: <SiNuxtdotjs />, name: "Nuxt.js" },
   { icon: <SiNextdotjs />, name: "Next.js" },
-  { icon: <SiNestjs />, name: "Nest.js" },
+  { icon: <FaVuejs />, name: "Vue.js" },
   { icon: <DiReact />, name: "React" },
+  { icon: <FaAngular />, name: "Angular" },
+  { icon: <SiNestjs />, name: "Nest.js" },
   { icon: <DiMongodb />, name: "MongoDB" },
+  { icon: <FaDocker />, name: "Docker" },
+  { icon: <DiJavascript1 />, name: "JavaScript" },
+  { icon: <DiPython />, name: "Python" },
   { icon: <TbApi />, name: "API" },
   { icon: <DiGit />, name: "Git" },
-  { icon: <FaDocker />, name: "Docker" },
-  { icon: <DiPython />, name: "Python" },
-  { icon: <FaAngular />, name: "Angular" },
+  { icon: <CgCPlusPlus />, name: "C++" },
 ];
 
 function Techstack() {

@@ -8,18 +8,22 @@ import {
   SiTrello,
   SiNginx,
   SiIcloud,
+  SiAmazonaws,
+  SiMicrosoftazure,
 } from "react-icons/si";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 
 const techStacks = [
-  { icon: <SiLinux />, name: "Linux" },
   { icon: <SiNginx />, name: "Nginx" },
+  { icon: <SiAmazonaws />, name: "AWS" },
+  { icon: <SiMicrosoftazure />, name: "Azure" },
   { icon: <SiIcloud />, name: "VPS" },
   { icon: <SiVisualstudiocode />, name: "VS Code" },
   { icon: <SiPostman />, name: "Postman" },
   { icon: <SiTrello />, name: "Trello" },
   { icon: <SiHeroku />, name: "Heroku" },
+  { icon: <SiLinux />, name: "Linux" },
 ];
 
 function Toolstack() {
