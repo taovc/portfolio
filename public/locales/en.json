@@ -3,11 +3,9 @@
   "nav-about": "About",
   "nav-projects": "Projects",
   "nav-resume": "CV",
-
   "common-hello": "Welcome to my website!",
   "common-i-am": "I am",
   "common-name": "Tao Weijie",
-
   "common-introduce": "LET ME INTRODUCE MYSELF",
   "common-introduce-body-1": "Hi Everyone, I am ",
   "common-introduce-body-1-1": " a software engineer.\n\nI graduated from Epitech Paris with ",
@@ -15,7 +13,6 @@
   "common-introduce-body-2": "I excel in various programming languages, including ",
   "common-introduce-body-2-1": "As well as modern frameworks like",
   "common-introduce-body-4": "I advocate for agile methodologies and thrive in team settings to deliver exceptional products.",
-
   "common-services": "SERVICES",
   "common-services-1": "I OFFER",
   "common-service-body-1": "As a software engineer, I bring the expertise needed to develop your software.\n\n I offer a wide range of services, including ",
@@ -24,7 +21,6 @@
   "common-service-body-2-1": "software engineering, Devops and AIoT,",
   "common-service-body-2-2": "ensuring tailored solutions for your needs.",
   "common-service-body-3": "Feel free to reach out for any questions or to discuss your project further🤝",
-
   "common-projects": "PROJECTS",
   "common-experiences": "EXPERIENCES",
   "project-subtitle": "My work experience and personal projects are listed below.",
@@ -34,7 +30,6 @@
   "project-2": "Full-stack (Angular, Nodejs, Express, Mongodb, Docker-compose)\n\nDeveloper a ERP system and maintaining an administration interface for managing orders, inventory, and generating personalized invoices.\n\nThe server is based on a microservices architecture with Hapi, and deployment is automated using to GitLab CI/CD and Docker Compose.\n\nIntegrate service workers and PWA to improve user experience.",
   "project-3-h": "DevOps Developer -- Dataraise",
   "project-3": "DevOps (docker-compose, Apache Hadoop with Talent Studio)\n\nContainerize a back-end service project for OnPremise deployment. Use docker, docker-compose and dockerHub to reduce installation costs.\n\nFollowing the first step, approve the service in Cloud mode (AWS).",
-
   "project-4-h": "Programming teacher -- Evogue",
   "project-4": "Programming teacher\n(Application development, DevOps, Microservices, AIoT)\n\nPreparation of PowerPoint presentations, exercises, and tutorials.\n\nProposal of DevOps, application development, and microservices courses to a group of around twenty people.\n\n.",
   "project-5-h": "Freelance Project -- FinanceAPI",
@@ -42,5 +37,6 @@
   "project-6-h": "Full-stack Project -- Area",
   "project-6": "Create a platform to automate office processes and integrate popular APIs to improve users' work efficiency.\n\nAllows the user to select a trigger and a reactor to create a workflow.\n\nFor example:\nTrigger: When you receive an email with an appointment time.\nReactor: Auto respond the emails and adds appointment to your calendar.",
   "project-7-h": "Iot Project -- OWL",
-  "project-7": "OWL is a mobile application that monitors driver condition through a connected watch and phone.\n\nThe watch and phone can detect signs of drowsiness or the risk of dozing off.\n\nIf such signs are detected, the driver's phone will alert them and advise them to stop to prevent any accidents."
+  "project-7": "OWL is a mobile application that monitors driver condition through a connected watch and phone.\n\nThe watch and phone can detect signs of drowsiness or the risk of dozing off.\n\nIf such signs are detected, the driver's phone will alert them and advise them to stop to prevent any accidents.",
+  "project-dataEr-title": "Project Leader -- DataEr"
 }

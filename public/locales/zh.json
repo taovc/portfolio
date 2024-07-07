@@ -3,21 +3,17 @@
   "Click to": "随时",
   "contact": "联系",
   "me": "我",
-
   "nav-home": "主页",
   "nav-about": "关于我",
   "nav-projects": "项目",
   "nav-resume": "简历",
-
   "common-hello": "欢迎来到我的个人网站",
   "common-i-am": "我是",
   "common-about": "关于",
-
   "common-name": "陶伟杰",
   "LET ME": "让我",
   "INTRODUCE": "介绍一下",
   "MYSELF": "自己",
-
   "common-introduce-body-1": "大家好，我是",
   "common-introduce-body-1-1": "，一名来自法国巴黎的软件工程师。\n\n",
   "common-introduce-body-1-2": "我在欧洲理工学院获得了工程师学位，并攻读了人工智能物联网的硕士学位。\n\n",
@@ -27,7 +23,6 @@
   "common-introduce-body-3": "以下是我热衷的领域：",
   "common-introduce-body-3-1": "桌面/移动端开发，网站开发，物联网和人工智能，\n\n",
   "common-introduce-body-4": "我提倡敏捷开发和构建一个良好的DevOps生态, 对产品交付上精益求精。",
-
   "common-services": "我提供的",
   "common-services-1": "服务",
   "common-service-body-1": "资深软件工程师，熟悉软件开发的业务和流程，并且提供以下服务： ",
@@ -36,12 +31,10 @@
   "common-service-body-2-1": "软件开发，DevOps，云计算，人工智能和物联网",
   "common-service-body-2-2": "领域的热情和专业知识，保证为您提供最优质的服务。",
   "common-service-body-3": "如有任何问题，请随时联系或进一步讨论您的项目🤝",
-
   "Professional": "专业",
   "Skillset": "技能",
   "Tools": "常用",
   "I use": "工具",
-
   "Experiences": "工作经历",
   "Projects": "项目",
   "project-subtitle": "下面是我的工作经历和项目经验",
@@ -51,7 +44,6 @@
   "project-2": "全栈 (Angular, Nodejs, Express, Mongodb, Docker-compose)\n\n全栈开发并维护一个Erp系统，用于企业级的订单，库存和发票等管理。\n\n服务器基于Hapi的微服务架构，使用GitLab CI/CD和Docker Compose进行自动化部署。\n\n集成service worker和PWA，以提高用户体验。",
   "project-3-h": "DevOps开发 -- Dataraise",
   "project-3": "DevOps (docker-compose, Apache Hadoop with Talent Studio)\n\n将基于Apache的esb后端服务项目容器化，并且上传到云端服务器。使用docker，docker-compose和dockerHub等技术来实现快速部署。\n\n在第一步之后，尝试使用云服务(AWS,OVH...)来给客户提供更流畅的体验中的服务。",
-  
   "project-4-h": "编程老师 -- Evogue",
   "project-4": "编程老师 (软件开发，DevOps，微服务，人工智能物联网)\n\n准备PowerPoint演示文稿，练习和教程。\n\n向约20人的小组辅导DevOps，应用程序开发和微服务等课程。\n\n.",
   "project-5-h": "接单项目 -- FinanceAPI",
@@ -59,5 +51,6 @@
   "project-6-h": "全栈项目 -- Area",
   "project-6": "创建一个自动化办公流程的平台，集成主流的Api，提高用户的工作效率。\n\n允许用户选择一个触发器和一个反应器来创建一个工作流。\n\n例如：\n触发器：当您收到一封带有预约时间电子邮件。\n反应器：它会使用预设的文案自动回复邮件并添加到日历安排。",
   "project-7-h": "物联网项目 -- OWL",
-  "project-7": "一款通过连接的手表和手机监控驾驶员状况的移动应用程序。\n\n手表和手机可以检测到疲劳或打瞌睡的风险。\n\n如果检测到这些迹象，驾驶员的手机将提醒他们并建议他们停下来以防止任何事故。"
+  "project-7": "一款通过连接的手表和手机监控驾驶员状况的移动应用程序。\n\n手表和手机可以检测到疲劳或打瞌睡的风险。\n\n如果检测到这些迹象，驾驶员的手机将提醒他们并建议他们停下来以防止任何事故。",
+  "project-dataEr-title": "项目负责人 -- DataEr"
 }

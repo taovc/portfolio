@@ -37,7 +37,9 @@ function ProjectCards(props) {
 
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img variant="top" src={props.imgPath} alt="card-img"
+        style={{ height: "260px" , width: "100%" }}
+      />
       <Card.Body style={{ paddingBottom: "50px", position: "relative" }}>
         <Card.Title className="purple_text">{props.title}</Card.Title>
         <br></br>

@@ -24,14 +24,14 @@ function NavBar() {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = () => {
-    if (language === "ch") {
+    if (language === "zh") {
       i18n.changeLanguage("en");
       setLanguage("en");
       localStorage.setItem("language", "en");
     } else {
-      i18n.changeLanguage("ch");
-      setLanguage("ch");
-      localStorage.setItem("language", "ch");
+      i18n.changeLanguage("zh");
+      setLanguage("zh");
+      localStorage.setItem("language", "zh");
     }
   };
 

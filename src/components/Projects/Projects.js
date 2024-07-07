@@ -33,6 +33,27 @@ function Projects() {
 
   const experiences = [
     {
+      imgPath: "https://res.cloudinary.com/dttnlrqf0/image/upload/v1720363943/me/dataEr.png",
+      title: t("project-dataEr-title"),
+      description: "",
+      webLink: "",
+      demoLink: "",
+    },
+    {
+      imgPath: "",
+      title: "",
+      description: "",
+      webLink: "",
+      demoLink: "",
+    },
+    {
+      imgPath: "",
+      title: "",
+      description: "",
+      webLink: "",
+      demoLink: "",
+    },
+    {
       imgPath:
         "https://res.cloudinary.com/djjxcsdai/image/upload/h_660,w_1080/v1695138129/portfolio/3e.png",
       title: t("project-1-h"),
@@ -91,9 +112,7 @@ function Projects() {
           {t("Projects")} {t("and")}{" "}
           <strong className="purple_text"> {t("Experiences")} </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          {t("project-subtitle")}
-        </p>
+        <p style={{ color: "white" }}>{t("project-subtitle")}</p>
         <br></br>
         <br></br>
         <br></br>
