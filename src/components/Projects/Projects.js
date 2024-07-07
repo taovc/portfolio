@@ -125,9 +125,7 @@ function Projects() {
         <animated.div style={animationProps} ref={ref}>
           <Row className="project-card">
             {experiences.map((project, index) => (
-              <Col key={index} md={6} lg={4}
-                style={{ marginBottom: "36px" }}
-              >
+              <Col key={index} md={6} lg={4} style={{ marginBottom: "36px" }}>
                 <ProjectCard
                   imgPath={project.imgPath}
                   isBlog={false}
@@ -146,7 +144,7 @@ function Projects() {
         <animated.div style={animationProps2} ref={ref2}>
           <Row className="project-card">
             {projects.map((project, index) => (
-              <Col key={index} md={6} lg={3}>
+              <Col key={index} md={6} lg={3} style={{ marginBottom: "36px" }}>
                 <ProjectCard
                   imgPath={project.imgPath}
                   isBlog={false}
