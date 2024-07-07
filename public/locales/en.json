@@ -43,5 +43,7 @@
   "project-ztw-description": "Based on the Azure cloud service platform, I helped the construction company ZTW develop an AI Rag service based on building specification documents. I was responsible for web crawling, data cleaning, data integration, data vectorization and the connection of AI services. The AI ​​service has been connected to the Bing search service and vector document service. So far, the vector database has 400,000 records and significantly improved the accuracy of AI answers.",
   "project-ztw-title": "Project Leader -- ZTW",
   "project-talentYou-title": "Fullstack Developer -- TalentYou",
-  "project-talentYou-description": "Telentyou is a start-up that combines education and AI. It uses AI technology to customize and generate courses, and provides everyone with efficient and traceable learning plans and real-time artificial intelligence tutoring. At present, 120,000 euros have been obtained through investment, and the next stage has begun."
+  "project-talentYou-description": "Telentyou is a start-up that combines education and AI. It uses AI technology to customize and generate courses, and provides everyone with efficient and traceable learning plans and real-time artificial intelligence tutoring. At present, 120,000 euros have been obtained through investment, and the next stage has begun.",
+  "Projects": "Projects",
+  "Experiences": "Experiences"
 }
