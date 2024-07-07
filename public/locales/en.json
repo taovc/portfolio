@@ -38,5 +38,10 @@
   "project-6": "Create a platform to automate office processes and integrate popular APIs to improve users' work efficiency.\n\nAllows the user to select a trigger and a reactor to create a workflow.\n\nFor example:\nTrigger: When you receive an email with an appointment time.\nReactor: Auto respond the emails and adds appointment to your calendar.",
   "project-7-h": "Iot Project -- OWL",
   "project-7": "OWL is a mobile application that monitors driver condition through a connected watch and phone.\n\nThe watch and phone can detect signs of drowsiness or the risk of dozing off.\n\nIf such signs are detected, the driver's phone will alert them and advise them to stop to prevent any accidents.",
-  "project-dataEr-title": "Project Leader -- DataEr"
+  "project-dataEr-title": "Project Leader -- DataEr",
+  "project-dataEr-description": "DataER is a data sharing platform where companies and researchers can publish data. The statisticians and data mining experts can obtain data for free to train AI to produce the best model. I personally completed the entire website from development to deployment. Use nextjs to cache most of the data to improve SEO and browsing speed.",
+  "project-ztw-description": "Based on the Azure cloud service platform, I helped the construction company ZTW develop an AI Rag service based on building specification documents. I was responsible for web crawling, data cleaning, data integration, data vectorization and the connection of AI services. The AI ​​service has been connected to the Bing search service and vector document service. So far, the vector database has 400,000 records and significantly improved the accuracy of AI answers.",
+  "project-ztw-title": "Project Leader -- ZTW",
+  "project-talentYou-title": "Fullstack Developer -- TalentYou",
+  "project-talentYou-description": "Telentyou is a start-up that combines education and AI. It uses AI technology to customize and generate courses, and provides everyone with efficient and traceable learning plans and real-time artificial intelligence tutoring. At present, 120,000 euros have been obtained through investment, and the next stage has begun."
 }

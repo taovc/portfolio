@@ -33,24 +33,27 @@ function Projects() {
 
   const experiences = [
     {
-      imgPath: "https://res.cloudinary.com/dttnlrqf0/image/upload/v1720363943/me/dataEr.png",
+      imgPath:
+        "https://res.cloudinary.com/dttnlrqf0/image/upload/v1720365358/me/talentYou.png",
+      title: t("project-talentYou-title"),
+      description: t("project-talentYou-description"),
+      webLink: "https://talentyou.ai/",
+      demoLink: "",
+    },
+    {
+      imgPath:
+        "https://res.cloudinary.com/dttnlrqf0/image/upload/v1720363943/me/dataEr.png",
       title: t("project-dataEr-title"),
-      description: "",
-      webLink: "",
+      description: t("project-dataEr-description"),
+      webLink: "https://yourdataer.com/",
       demoLink: "",
     },
     {
-      imgPath: "",
-      title: "",
-      description: "",
-      webLink: "",
-      demoLink: "",
-    },
-    {
-      imgPath: "",
-      title: "",
-      description: "",
-      webLink: "",
+      imgPath:
+        "https://res.cloudinary.com/dttnlrqf0/image/upload/v1720365171/me/ztw.png",
+      title: t("project-ztw-title"),
+      description: t("project-ztw-description"),
+      webLink: "https://www.ztw666.com/index/index/new_index.html",
       demoLink: "",
     },
     {
@@ -122,7 +125,9 @@ function Projects() {
         <animated.div style={animationProps} ref={ref}>
           <Row className="project-card">
             {experiences.map((project, index) => (
-              <Col key={index} md={6} lg={4}>
+              <Col key={index} md={6} lg={4}
+                style={{ marginBottom: "36px" }}
+              >
                 <ProjectCard
                   imgPath={project.imgPath}
                   isBlog={false}

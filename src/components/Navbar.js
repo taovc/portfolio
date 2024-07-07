@@ -92,7 +92,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
@@ -101,7 +101,7 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
                 {t("nav-resume")}
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item className="fork-btn">
               <Button className="fork-btn-inner" onClick={changeLanguage}>
