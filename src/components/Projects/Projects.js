@@ -53,7 +53,7 @@ function Projects() {
         "https://res.cloudinary.com/dttnlrqf0/image/upload/v1720365171/me/ztw.png",
       title: t("project-ztw-title"),
       description: t("project-ztw-description"),
-      webLink: "https://www.ztw666.com/index/index/new_index.html",
+      webLink: "",
       demoLink: "",
     },
     {
